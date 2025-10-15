@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "dark", "contrast", "air", "aqua", "mint", "neon"
+site_theme               : "air" # Currently available options are "default", "dark", "contrast", "air", "aqua", "mint", "neon"
 title                    : "Jianlei Yang's Homepage"
 title_separator          : "-"
 name                     : "Jianlei Yang"
