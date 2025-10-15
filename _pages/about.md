@@ -1,15 +1,25 @@
 ---
 permalink: /
-title: "about Jianlei Yang"
+title: "关于我 (About Me)"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+Jianlei Yang is a Professor at Beihang University. His research focuses on intelligent computing systems, hardware security, and AI architectures.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+## Research Interests
+- Intelligent computing systems and architectures  
+- Hardware acceleration for privacy-preserving computation  
+- Secure AI chips and post-quantum cryptography
+
+## News
+- [2025.09] Paper accepted to *IEEE TCAS-I*!  
+- [2025.06] Invited talk at DAC 2025.  
+- [2025.04] One paper accepted by *MICRO 2025*.
+
+
 
 A data-driven personal website
 ======
