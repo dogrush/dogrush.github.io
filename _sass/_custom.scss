@@ -1,7 +1,7 @@
 /* =============================================================
    极简版 AcademicPages 配置
-   正文字体黑色，标题蓝色 #4472C4
-   链接红色 #A31F34，hover 背景红色半透明
+   正文字体黑色，标题红色 #A31F34
+   链接蓝色 #4472C4，hover 字体红色 #A31F34
    ============================================================= */
 
 /* =======================
@@ -15,22 +15,22 @@ body {
    2. 所有标题颜色
    ======================= */
 h1, h2, h3, h4, h5, h6 {
-  color: #4472C4; /* 蓝色 */
+  color: #A31F34; /* 红色 */
 }
 
 /* =======================
    3. 正文链接
    ======================= */
 a {
-  color: #A31F34; /* 链接红色 */
+  color: #4472C4; /* 蓝色链接 */
   text-decoration: none;
-  transition: background-color 0.2s ease;
-  padding: 0 0.1em; /* 背景高亮时不挤占文字 */
+  transition: color 0.2s ease, background-color 0.2s ease;
+  padding: 0 0.1em;
 }
 
 a:hover, a:focus {
-  color: #A31F34; /* 字体不变 */
-  background-color: rgba(163, 31, 52, 0.15); /* 红色半透明背景 */
+  color: #A31F34; /* hover 字体红色 */
+  background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
   border-radius: 3px;
 }
 
@@ -42,7 +42,7 @@ a:hover, a:focus {
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #000000 !important; /* 字体不变 */
+  color: #000000 !important; /* 字体保持黑色 */
   background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
   border-radius: 3px;
 }
@@ -55,13 +55,13 @@ a:hover, a:focus {
 }
 
 .site-footer a {
-  color: #A31F34; /* 页脚链接红色 */
+  color: #4472C4; /* 蓝色链接 */
   text-decoration: none;
   padding: 0 0.1em;
 }
 
 .site-footer a:hover {
-  color: #A31F34; /* 字体不变 */
+  color: #A31F34; /* hover 字体红色 */
   background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
   border-radius: 3px;
 }
