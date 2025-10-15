@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "mint" # Currently available options are "default", "dark", "contrast", "air", "aqua", "mint", "neon"
+site_theme               : "air" # Currently available options are "default", "dark", "contrast", "air", "aqua", "mint", "neon"
 title                    : "Jianlei Yang @ Beihang University"
 title_separator          : "-"
 name                     : "Jianlei Yang"
