@@ -8,10 +8,6 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-// ==============================
-// 1. 自定义变量区域
-// ==============================
-
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -45,3 +41,6 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+@import "custom";
+
