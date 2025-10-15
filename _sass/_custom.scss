@@ -99,13 +99,13 @@ a:focus {
 .sidebar a,
 .sidebar p,
 .sidebar li {
-  font-size: 1rem; /* 默认是 0.875rem，可以调大到 1rem 或更大 */
-  line-height: 1.5; /* 增加可读性 */
+  font-size: 0.9rem; /* 默认是 0.875rem，可以调大到 1rem 或更大 */
+  line-height: 1.2; /* 增加可读性 */
 }
 
 .sidebar a {
   color: #4472C4; /* 保持蓝色链接 */
-  text-decoration: underline; /* 保留下划线 */
+  // text-decoration: underline; /* 保留下划线 */
   transition: color 0.25s ease; /* hover 平滑过渡 */
 }
 
