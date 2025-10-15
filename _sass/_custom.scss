@@ -1,34 +1,41 @@
 /* =============================================================
    极简版 AcademicPages 配置
-   正文字体黑色，标题北航蓝
+   正文字体黑色，标题和链接浅北航蓝
+   链接 hover 显示背景色
    导航栏字体黑色，页脚字体深灰
+   Profile 图片保持原始形状
    ============================================================= */
 
 /* =======================
-   1. 正文字体
+   1. 主字体
    ======================= */
 body {
-  color: #000000; /* 正文字体为黑色 */
+  color: #000000; /* 正文字体黑色 */
 }
 
 /* =======================
    2. 标题颜色
    ======================= */
+$light-beihang-blue: #3366cc; /* 浅北航蓝 */
+
 h1, h2, h3, h4, h5, h6 { 
-  color: #003399; /* 北航蓝 Beihang Blue */
+  color: $light-beihang-blue; /* 标题使用浅北航蓝 */
 }
 
 /* =======================
    3. 正文链接
    ======================= */
 a {
-  color: #003399; /* 北航蓝强调 */
+  color: $light-beihang-blue; /* 链接颜色浅北航蓝 */
   text-decoration: none;
+  transition: background-color 0.2s ease;
+  padding: 0 0.1em; /* 背景色高亮时不挤占文字 */
 }
 
 a:hover, a:focus {
-  color: #003399; /* hover 仍北航蓝 */
-  text-decoration: none;
+  color: $light-beihang-blue; /* hover 字体颜色不变 */
+  background-color: rgba(51, 102, 204, 0.15); /* 浅北航蓝背景高亮 */
+  border-radius: 3px;
 }
 
 /* =======================
@@ -39,30 +46,34 @@ a:hover, a:focus {
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #003399 !important; /* hover 北航蓝 */
+  color: #000000 !important; /* hover 字体不变 */
+  background-color: rgba(51, 102, 204, 0.15); /* 背景色高亮 */
+  border-radius: 3px;
 }
 
 /* =======================
    5. 页脚字体
    ======================= */
 .site-footer {
-  color: #333333; /* 页脚字体深灰色 */
+  color: #333333; /* 深灰字体 */
 }
 
 .site-footer a {
-  color: #003399; /* 页脚链接北航蓝 */
+  color: $light-beihang-blue; /* 页脚链接浅北航蓝 */
   text-decoration: none;
+  padding: 0 0.1em;
 }
 
 .site-footer a:hover {
-  color: #003399; /* hover 北航蓝 */
-  text-decoration: none;
+  color: $light-beihang-blue; /* 字体不变 */
+  background-color: rgba(51, 102, 204, 0.15);
+  border-radius: 3px;
 }
 
 /* =======================
-   6. Profile 图片去圆角
+   6. Profile 图片
    ======================= */
 .author-profile img,
 .profile-picture img {
-  border-radius: 0 !important; /* 去掉圆角，保持原始形状 */
+  border-radius: 0 !important; /* 保持原始形状 */
 }
