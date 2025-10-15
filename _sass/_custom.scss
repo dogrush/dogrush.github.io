@@ -2,6 +2,7 @@
    极简版 AcademicPages 配置
    正文字体黑色，标题红色 #A31F34
    链接蓝色 #4472C4，hover 字体红色 #A31F34
+   导航栏和页脚按照要求设置
    ============================================================= */
 
 /* =======================
@@ -37,32 +38,43 @@ a:hover, a:focus {
 /* =======================
    4. 导航栏链接
    ======================= */
-.navbar a, .site-nav a {
-  color: #000000 !important; /* 导航栏字体黑色 */
+/* 针对 navbar 和 site-nav 的所有链接 */
+.navbar a,
+.site-nav a,
+.navbar li a,
+.site-nav li a {
+  color: #000000 !important; /* 黑色字体 */
 }
 
-.navbar a:hover, .site-nav a:hover {
-  color: #000000 !important; /* 字体保持黑色 */
-  background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
+.navbar a:hover,
+.site-nav a:hover,
+.navbar li a:hover,
+.site-nav li a:hover {
+  color: #A31F34 !important; /* hover 红色 */
+  background-color: rgba(163, 31, 52, 0.15); /* 可选半透明背景 */
   border-radius: 3px;
 }
 
 /* =======================
    5. 页脚字体
    ======================= */
-.site-footer {
-  color: #333333; /* 深灰字体 */
+.site-footer,
+.site-footer p,
+.site-footer span,
+.site-footer li,
+.site-footer li a {
+  color: #000000 !important; /* 黑色字体 */
 }
 
 .site-footer a {
-  color: #4472C4; /* 蓝色链接 */
+  color: #4472C4 !important; /* 蓝色链接 */
   text-decoration: none;
   padding: 0 0.1em;
 }
 
 .site-footer a:hover {
-  color: #A31F34; /* hover 字体红色 */
-  background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
+  color: #A31F34 !important; /* hover 红色字体 */
+  background-color: rgba(163, 31, 52, 0.15); /* 半透明背景 */
   border-radius: 3px;
 }
 
@@ -70,6 +82,8 @@ a:hover, a:focus {
    6. Profile 图片
    ======================= */
 .author-profile img,
-.profile-picture img {
+.profile-picture img,
+.author-profile .avatar,
+.profile-picture img.avatar {
   border-radius: 0 !important; /* 保持原始形状 */
 }
