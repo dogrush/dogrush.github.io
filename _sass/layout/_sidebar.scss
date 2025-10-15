@@ -100,7 +100,9 @@
     border-radius: 0;
 
     @include breakpoint($large) {
-      padding: 5px;
+      // modified by Jianlei Yang
+      // padding: 5px;
+      padding: 0;
       border: 1px solid var(--global-border-color);
     }
   }
