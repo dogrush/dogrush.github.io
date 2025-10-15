@@ -1,8 +1,0 @@
-/* 取消头像圆形剪切，保持原图比例 */
-.author__avatar img {
-  border-radius: 0 !important;     /* 去掉圆角 */
-  width: auto !important;          /* 保留原始宽高比 */
-  height: auto !important;
-  max-width: 100%;                 /* 防止超出侧边栏 */
-  box-shadow: none !important;     /* 可选，去除阴影 */
-}
