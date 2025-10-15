@@ -4,6 +4,15 @@
    Author: Jianlei Yang
    ========================================================================== */
 
+/* ===== 让头像保持原始比例且限制最大尺寸 ===== */
+.avatar, .author-avatar {
+  border-radius: 0 !important;
+  overflow: visible !important;
+  width: auto;       /* 宽度自适应 */
+  max-width: 150px;  /* 最大宽度 */
+  height: auto;      /* 高度自适应 */
+}
+
 /* ===== 全局字体与颜色 ===== */
 body {
   color: #2b2b2b; /* 主文字颜色 */
