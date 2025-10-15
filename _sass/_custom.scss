@@ -58,3 +58,11 @@ a:hover, a:focus {
   color: #003399; /* hover 北航蓝 */
   text-decoration: none;
 }
+
+/* =======================
+   6. Profile 图片去圆角
+   ======================= */
+.author-profile img,
+.profile-picture img {
+  border-radius: 0 !important; /* 去掉圆角，保持原始形状 */
+}
