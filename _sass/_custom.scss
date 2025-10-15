@@ -1,13 +1,10 @@
 /* =============================================================
    极简版 AcademicPages 配置
-   正文字体黑色，标题和链接浅北航蓝
-   链接 hover 显示背景色
-   导航栏字体黑色，页脚字体深灰
-   Profile 图片保持原始形状
+   正文字体黑色，仅使用默认蓝色与砖红色
    ============================================================= */
 
 /* =======================
-   1. 主字体
+   1. 正文字体
    ======================= */
 body {
   color: #000000; /* 正文字体黑色 */
@@ -16,38 +13,41 @@ body {
 /* =======================
    2. 标题颜色
    ======================= */
-$light-beihang-blue: #3366cc; /* 浅北航蓝 */
+/* 默认蓝色用于主标题 h1-h3 */
+h1, h2, h3 { 
+  color: #007acc; /* AcademicPages 默认蓝色 */
+}
 
-h1, h2, h3, h4, h5, h6 { 
-  color: $light-beihang-blue; /* 标题使用浅北航蓝 */
+/* 砖红色用于次级标题 h4-h6 */
+h4, h5, h6 { 
+  color: #b22222; /* 砖红色 */
 }
 
 /* =======================
    3. 正文链接
    ======================= */
 a {
-  color: $light-beihang-blue; /* 链接颜色浅北航蓝 */
+  color: #007acc; /* 默认蓝色强调链接 */
   text-decoration: none;
-  transition: background-color 0.2s ease;
-  padding: 0 0.1em; /* 背景色高亮时不挤占文字 */
 }
 
 a:hover, a:focus {
-  color: $light-beihang-blue; /* hover 字体颜色不变 */
-  background-color: rgba(51, 102, 204, 0.15); /* 浅北航蓝背景高亮 */
+  color: #007acc; /* hover 不改变字体颜色 */
+  background-color: rgba(178, 34, 34, 0.1); /* 砖红色半透明背景提示 */
   border-radius: 3px;
+  padding: 0 0.1em;
 }
 
 /* =======================
    4. 导航栏链接
    ======================= */
 .navbar a, .site-nav a {
-  color: #000000 !important; /* 导航栏字体黑色 */
+  color: #007acc !important; /* 默认蓝色 */
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #000000 !important; /* hover 字体不变 */
-  background-color: rgba(51, 102, 204, 0.15); /* 背景色高亮 */
+  color: #007acc !important; /* hover 不改变字体颜色 */
+  background-color: rgba(178, 34, 34, 0.1); /* 砖红色背景 */
   border-radius: 3px;
 }
 
@@ -55,18 +55,18 @@ a:hover, a:focus {
    5. 页脚字体
    ======================= */
 .site-footer {
-  color: #333333; /* 深灰字体 */
+  color: #333333; /* 深灰字体，保持可读性 */
 }
 
 .site-footer a {
-  color: $light-beihang-blue; /* 页脚链接浅北航蓝 */
+  color: #007acc; /* 默认蓝色 */
   text-decoration: none;
   padding: 0 0.1em;
 }
 
 .site-footer a:hover {
-  color: $light-beihang-blue; /* 字体不变 */
-  background-color: rgba(51, 102, 204, 0.15);
+  color: #007acc; /* hover 字体不变 */
+  background-color: rgba(178, 34, 34, 0.1); /* 背景色提示 */
   border-radius: 3px;
 }
 
