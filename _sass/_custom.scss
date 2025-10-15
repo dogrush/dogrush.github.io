@@ -37,19 +37,24 @@ a:focus {
 /* =======================
    4. 导航栏链接（保证生效）
    ======================= */
-.navbar a,
-.navbar a:link,
-.navbar a:visited,
-.navbar li a,
-.navbar li a:link,
-.navbar li a:visited,
-.site-nav a,
-.site-nav a:link,
-.site-nav a:visited {
-  color: #000000 !important;       /* 导航栏黑色 */
-  text-decoration: underline;       /* 保留下划线 */
+/* 导航栏所有链接强制黑色，hover 红色 */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav li a,
+.site-nav li a,
+.navbar .site-nav li a {
+  color: #000000 !important;
+  text-decoration: underline;  /* 保留下划线 */
   transition: color 0.25s ease;
 }
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav li a:hover,
+.site-nav li a:hover,
+.navbar .site-nav li a:hover {
+  color: #A31F34 !important;
+  background-color: transparent !important;
+}
+
 
 .navbar a:hover,
 .navbar li a:hover,
