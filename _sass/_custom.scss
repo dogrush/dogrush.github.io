@@ -1,6 +1,6 @@
 /* =============================================================
-   简化版 AcademicPages 配置
-   主字体黑色，标题两种蓝色，链接和导航蓝色
+   极简版 AcademicPages 配置
+   正文字体黑色，唯一强调色为北航蓝，页脚字体也黑色
    ============================================================= */
 
 /* =======================
@@ -13,11 +13,7 @@ body {
 /* =======================
    2. 标题颜色
    ======================= */
-h1, h2, h3 { 
-  color: #4B0082; /* 靛蓝 Indigo */
-}
-
-h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 { 
   color: #003399; /* 北航蓝 Beihang Blue */
 }
 
@@ -25,12 +21,12 @@ h4, h5, h6 {
    3. 正文链接
    ======================= */
 a {
-  color: #1E90FF; /* 蓝色强调 */
+  color: #003399; /* 北航蓝强调 */
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #003399; /* hover 北航蓝 */
+  color: #003399; /* hover 仍北航蓝 */
   text-decoration: none;
 }
 
@@ -42,5 +38,22 @@ a:hover, a:focus {
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #4B0082 !important; /* hover 靛蓝 */
+  color: #003399 !important; /* hover 仍北航蓝 */
+}
+
+/* =======================
+   5. 页脚字体
+   ======================= */
+.site-footer {
+  color: #000000; /* 页脚字体设置为黑色 */
+}
+
+.site-footer a {
+  color: #003399; /* 页脚链接北航蓝 */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #003399; /* hover 仍北航蓝 */
+  text-decoration: none;
 }
