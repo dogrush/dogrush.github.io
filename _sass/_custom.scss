@@ -1,8 +1,10 @@
-/* =============================================================
-   极简版 AcademicPages 配置
+/* ============================================================= 
+   AcademicPages 极简学术风格配置
    正文字体黑色，标题红色 #A31F34
-   链接蓝色 #4472C4，hover 字体红色 #A31F34
-   导航栏和页脚按照要求设置
+   链接蓝色 #4472C4，hover 红色 #A31F34
+   导航栏字体黑色 hover 红色
+   页脚字体黑色，链接蓝色 hover 红色
+   Profile 图片保持原始形状
    ============================================================= */
 
 /* =======================
@@ -13,10 +15,10 @@ body {
 }
 
 /* =======================
-   2. 所有标题颜色
+   2. 所有标题
    ======================= */
 h1, h2, h3, h4, h5, h6 {
-  color: #A31F34; /* 红色 */
+  color: #A31F34; /* 红色标题 */
 }
 
 /* =======================
@@ -25,34 +27,32 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #4472C4; /* 蓝色链接 */
   text-decoration: none;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease;
   padding: 0 0.1em;
 }
 
-a:hover, a:focus {
-  color: #A31F34; /* hover 字体红色 */
-  background-color: rgba(163, 31, 52, 0.15); /* 背景红色半透明 */
-  border-radius: 3px;
+a:hover,
+a:focus {
+  color: #A31F34; /* hover 红色字体 */
+  background-color: transparent; /* 移除背景 */
 }
 
 /* =======================
    4. 导航栏链接
    ======================= */
-/* 针对 navbar 和 site-nav 的所有链接 */
 .navbar a,
 .site-nav a,
 .navbar li a,
 .site-nav li a {
-  color: #000000 !important; /* 黑色字体 */
+  color: #000000 !important; /* 导航栏字体黑色 */
 }
 
 .navbar a:hover,
 .site-nav a:hover,
 .navbar li a:hover,
 .site-nav li a:hover {
-  color: #A31F34 !important; /* hover 红色 */
-  background-color: rgba(163, 31, 52, 0.15); /* 可选半透明背景 */
-  border-radius: 3px;
+  color: #A31F34 !important; /* hover 红色字体 */
+  background-color: transparent; /* 移除背景 */
 }
 
 /* =======================
@@ -61,21 +61,19 @@ a:hover, a:focus {
 .site-footer,
 .site-footer p,
 .site-footer span,
-.site-footer li,
-.site-footer li a {
-  color: #000000 !important; /* 黑色字体 */
+.site-footer li {
+  color: #000000 !important; /* 页脚字体黑色 */
 }
 
 .site-footer a {
-  color: #4472C4 !important; /* 蓝色链接 */
+  color: #4472C4 !important; /* 页脚链接蓝色 */
   text-decoration: none;
   padding: 0 0.1em;
 }
 
 .site-footer a:hover {
   color: #A31F34 !important; /* hover 红色字体 */
-  background-color: rgba(163, 31, 52, 0.15); /* 半透明背景 */
-  border-radius: 3px;
+  background-color: transparent; /* 移除背景 */
 }
 
 /* =======================
@@ -85,5 +83,5 @@ a:hover, a:focus {
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important; /* 保持原始形状 */
+  border-radius: 0 !important; /* 去掉圆角，保持原始形状 */
 }

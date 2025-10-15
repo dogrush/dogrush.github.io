@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "About Me"
+title: "Prof. Jianlei Yang @ Beihang University"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Jianlei Yang is a Professor at Beihang University. His research focuses on intelligent computing systems, hardware security, and AI architectures.
+I am a Professor at Beihang University. My research focuses on intelligent computing systems, hardware security, and AI architectures.
 
 ## Research Interests
 - Intelligent Computing System and Architectures
