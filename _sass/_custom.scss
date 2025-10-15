@@ -1,6 +1,6 @@
 /* =============================================================
    极简版 AcademicPages 配置
-   正文字体黑色，仅使用默认蓝色与砖红色
+   正文字体黑色，强调色使用蓝色 #4472C4 与红色 #A31F34
    ============================================================= */
 
 /* =======================
@@ -13,41 +13,42 @@ body {
 /* =======================
    2. 标题颜色
    ======================= */
-/* 默认蓝色用于主标题 h1-h3 */
-h1, h2, h3 { 
-  color: #007acc; /* AcademicPages 默认蓝色 */
+/* 主标题 h1-h3 使用蓝色 */
+h1, h2, h3 {
+  color: #4472C4; /* 蓝色 */
 }
 
-/* 砖红色用于次级标题 h4-h6 */
-h4, h5, h6 { 
-  color: #b22222; /* 砖红色 */
+/* 次级标题 h4-h6 使用红色 */
+h4, h5, h6 {
+  color: #A31F34; /* 红色 */
 }
 
 /* =======================
    3. 正文链接
    ======================= */
 a {
-  color: #007acc; /* 默认蓝色强调链接 */
+  color: #4472C4; /* 蓝色链接 */
   text-decoration: none;
+  transition: background-color 0.2s ease;
+  padding: 0 0.1em; /* 背景高亮时不挤占文字 */
 }
 
 a:hover, a:focus {
-  color: #007acc; /* hover 不改变字体颜色 */
-  background-color: rgba(178, 34, 34, 0.1); /* 砖红色半透明背景提示 */
+  color: #4472C4; /* hover 字体不变 */
+  background-color: rgba(163, 31, 52, 0.15); /* 红色半透明背景 */
   border-radius: 3px;
-  padding: 0 0.1em;
 }
 
 /* =======================
    4. 导航栏链接
    ======================= */
 .navbar a, .site-nav a {
-  color: #007acc !important; /* 默认蓝色 */
+  color: #4472C4 !important; /* 蓝色 */
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #007acc !important; /* hover 不改变字体颜色 */
-  background-color: rgba(178, 34, 34, 0.1); /* 砖红色背景 */
+  color: #4472C4 !important; /* hover 字体不变 */
+  background-color: rgba(163, 31, 52, 0.15); /* 背景红色提示 */
   border-radius: 3px;
 }
 
@@ -55,25 +56,10 @@ a:hover, a:focus {
    5. 页脚字体
    ======================= */
 .site-footer {
-  color: #333333; /* 深灰字体，保持可读性 */
+  color: #333333; /* 深灰字体 */
 }
 
 .site-footer a {
-  color: #007acc; /* 默认蓝色 */
+  color: #4472C4; /* 蓝色链接 */
   text-decoration: none;
-  padding: 0 0.1em;
-}
-
-.site-footer a:hover {
-  color: #007acc; /* hover 字体不变 */
-  background-color: rgba(178, 34, 34, 0.1); /* 背景色提示 */
-  border-radius: 3px;
-}
-
-/* =======================
-   6. Profile 图片
-   ======================= */
-.author-profile img,
-.profile-picture img {
-  border-radius: 0 !important; /* 保持原始形状 */
-}
+  padding: 0 0
