@@ -1,94 +1,93 @@
 /* ============================================================= 
-   AcademicPages 极简学术风格配置
-   正文字体黑色，标题红色 #A31F34
-   链接蓝色 #4472C4，hover 红色 #A31F34 (无背景色)
-   导航栏字体黑色 hover 红色 (无背景色)
-   页脚字体黑色，链接蓝色 hover 红色 (无背景色)
-   Profile 图片保持原始形状
+   AcademicPages 配色与样式优化配置
+   - 正文字体黑色
+   - 标题红色 #A31F34
+   - 链接蓝色 #4472C4，hover 红色 #A31F34，保留下划线
+   - 导航栏字体黑色，hover 红色
+   - 页脚字体黑色，链接蓝色，hover 红色
+   - Profile 图片保持原始形状
+   - 所有链接 hover 平滑过渡
    ============================================================= */
 
 /* =======================
-   1. 正文字体
+   1. 正文字体颜色与基础样式
    ======================= */
 body {
-  color: #000000; /* 正文字体黑色 */
+  color: #000000; /* 正文文字黑色 */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6; /* 增加可读性 */
 }
 
 /* =======================
-   2. 所有标题
+   2. 所有标题颜色
    ======================= */
 h1, h2, h3, h4, h5, h6 {
-  color: #A31F34; /* 红色标题 #A31F34 */
+  color: #A31F34; /* 所有标题红色 */
+  font-weight: 600; /* 标题加粗 */
 }
 
 /* =======================
-   3. 正文链接
+   3. 正文链接样式
    ======================= */
 a {
-  color: #4472C4; /* 蓝色链接 #4472C4 */
-  text-decoration: none;
-  transition: color 0.2s ease; /* 移除 background-color 的过渡效果 */
-  padding: 0; /* 移除 padding，防止 hover 时出现不必要的间隙 */
+  color: #4472C4; /* 正文链接蓝色 */
+  text-decoration: underline; /* 保留下划线 */
+  transition: color 0.25s ease; /* 文字颜色平滑过渡 */
 }
 
-a:hover, a:focus {
-  color: #A31F34; /* hover 红色字体 #A31F34 */
-  background-color: transparent; /* 确保不使用背景色 */
-  border-radius: 0; /* 移除圆角 */
+a:hover,
+a:focus {
+  color: #A31F34; /* 鼠标悬停文字变红 */
+  background-color: transparent; /* 不使用背景色 */
 }
 
 /* =======================
-   4. 导航栏链接
+   4. 导航栏链接样式
    ======================= */
 .navbar a,
 .site-nav a,
 .navbar li a,
 .site-nav li a {
-  color: #000000 !important; /* 导航栏字体黑色 */
-  transition: color 0.2s ease; /* 增加过渡效果 */
+  color: #000000 !important; /* 导航栏文字黑色 */
+  text-decoration: underline; /* 保留下划线 */
+  transition: color 0.25s ease; /* hover 平滑过渡 */
 }
 
 .navbar a:hover,
 .site-nav a:hover,
 .navbar li a:hover,
 .site-nav li a:hover {
-  color: #A31F34 !important; /* hover 红色字体 #A31F34 */
-  background-color: transparent !important; /* 确保不使用背景色 */
-  border-radius: 0 !important; /* 移除圆角 */
+  color: #A31F34 !important; /* hover 红色文字 */
+  background-color: transparent; /* 不使用背景色 */
 }
 
 /* =======================
-   5. 页脚字体和链接
+   5. 页脚文字与链接
    ======================= */
-.site-footer {
-  color: #000000 !important; /* 页脚字体黑色 */
-}
-
+.site-footer,
 .site-footer p,
 .site-footer span,
 .site-footer li {
-    color: #000000; /* 确保子元素也是黑色 */
+  color: #000000 !important; /* 页脚文字黑色 */
 }
 
 .site-footer a {
-  color: #4472C4 !important; /* 页脚链接蓝色 #4472C4 */
-  text-decoration: none;
-  padding: 0;
-  transition: color 0.2s ease;
+  color: #4472C4 !important; /* 页脚链接蓝色 */
+  text-decoration: underline; /* 保留下划线 */
+  transition: color 0.25s ease; /* hover 平滑过渡 */
 }
 
 .site-footer a:hover {
-  color: #A31F34 !important; /* hover 红色字体 #A31F34 */
-  background-color: transparent !important; /* 确保不使用背景色 */
-  border-radius: 0 !important; /* 移除圆角 */
+  color: #A31F34 !important; /* 页脚链接 hover 红色 */
+  background-color: transparent; /* 不使用背景色 */
 }
 
 /* =======================
-   6. Profile 图片
+   6. Profile 图片样式
    ======================= */
 .author-profile img,
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important; /* 去掉圆角，保持原始形状 */
+  border-radius: 0 !important; /* 保持原始形状，去掉圆角 */
 }
