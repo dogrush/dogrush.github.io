@@ -1,139 +1,144 @@
 /* =====================================================
-   AcademicPages Custom Theme - "Academic Blue"
-   Designed for a clean, professional academic appearance
+   Tech Scholar Pro Theme for AcademicPages
+   Elegant, technical, and professional academic style
    ===================================================== */
 
-/* === 基础文字与背景 === */
+/* === 字体引入 === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@700&display=swap');
+
+/* === 基础设置 === */
 body {
-  color: #2b2b2b; /* 正文字体颜色 */
+  font-family: "Inter", "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
+  color: #1f2937; /* 深灰蓝文字 */
   background-color: #ffffff;
-  font-family: "Helvetica Neue", "Segoe UI", "Roboto", "Noto Sans", sans-serif;
-  line-height: 1.7;
+  line-height: 1.75;
+  font-size: 16.5px;
 }
 
-/* === 标题颜色与层级感 === */
+/* === 标题样式 === */
 h1, h2, h3, h4, h5, h6 {
-  color: #0a3d62; /* 深蓝标题 */
-  font-weight: 600;
+  font-family: "Merriweather", "Georgia", serif;
+  color: #1E3A8A; /* 深蓝标题 */
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
-  border-bottom: 2px solid #e0ecf8;
-  padding-bottom: 0.2em;
+  border-bottom: 2px solid #E5E7EB;
+  padding-bottom: 0.3em;
 }
 
 /* === 链接样式 === */
 a {
-  color: #0066cc;
+  color: #2563EB;
   text-decoration: none;
-  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-a:hover, a:focus {
-  color: #004c99;
-  border-bottom: 1px solid #004c99;
-  text-decoration: none;
+a:hover {
+  color: #1E40AF;
+  text-decoration: underline;
 }
 
-/* === 导航栏（顶部菜单） === */
-.navbar,
-.site-header,
-.site-nav {
-  background-color: #f8fbff;
-  border-bottom: 1px solid #dce9f9;
+/* === 导航栏 === */
+.navbar, .site-header, .site-nav {
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
 }
 
-.navbar a,
-.site-nav a {
-  color: #004080 !important;
+.navbar a, .site-nav a {
+  color: #1E3A8A !important;
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.navbar a:hover,
-.site-nav a:hover {
-  color: #007bff !important;
+.navbar a:hover, .site-nav a:hover {
+  color: #2563EB !important;
 }
 
-/* === 页脚 === */
-.site-footer {
-  background-color: #f5f9ff;
-  color: #666666;
-  border-top: 1px solid #d8e6f8;
-}
-
-.site-footer a {
-  color: #0056b3;
-}
-
-.site-footer a:hover {
-  color: #003d80;
-}
-
-/* === 文章区块 === */
+/* === 页面卡片/文章区块 === */
 .post, .page-content {
   background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 64, 128, 0.08);
-  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(30, 58, 138, 0.08);
+  padding: 2rem;
   margin-bottom: 2rem;
 }
 
 /* === 引用块 === */
 blockquote {
-  border-left: 4px solid #0077cc;
-  background: #f5f9ff;
-  padding: 0.75em 1em;
-  color: #333;
+  border-left: 4px solid #2563EB;
+  background: #F1F5F9;
+  padding: 0.8em 1.2em;
+  color: #374151;
   font-style: italic;
+  border-radius: 6px;
 }
 
-/* === 表格样式 === */
+/* === 页脚 === */
+.site-footer {
+  background-color: #F8FAFC;
+  color: #6B7280;
+  border-top: 1px solid #E5E7EB;
+  padding-top: 1em;
+}
+
+.site-footer a {
+  color: #2563EB;
+}
+.site-footer a:hover {
+  color: #1E40AF;
+}
+
+/* === 表格 === */
 table {
   border-collapse: collapse;
   width: 100%;
   margin: 1em 0;
 }
-
 th, td {
-  border: 1px solid #dbe7f5;
-  padding: 0.5em 1em;
+  border: 1px solid #E2E8F0;
+  padding: 0.6em 1em;
 }
-
 th {
-  background-color: #eef5ff;
-  color: #004080;
+  background-color: #EFF6FF;
+  color: #1E3A8A;
   font-weight: 600;
 }
 
-/* === 按钮样式（用于项目/Publication链接） === */
+/* === 按钮 === */
 .btn, .button {
-  background-color: #0077cc;
-  color: #fff !important;
+  background-color: #2563EB;
+  color: #ffffff !important;
   border-radius: 6px;
-  padding: 0.4em 0.9em;
+  padding: 0.45em 0.9em;
   font-size: 0.95em;
   transition: background-color 0.2s ease-in-out;
 }
-
 .btn:hover, .button:hover {
-  background-color: #005fa3;
+  background-color: #1E40AF;
 }
 
-/* === 图片与标题区 === */
-img {
-  border-radius: 6px;
-}
-
-.page__title {
-  color: #0a3d62;
-  font-weight: 600;
-}
-
-/* === 代码高亮（蓝色调） === */
+/* === 代码块 === */
 pre, code {
-  background-color: #f0f7ff;
-  color: #003366;
-  border-radius: 5px;
-  padding: 0.2em 0.4em;
-  font-family: "Courier New", monospace;
+  background-color: #F3F4F6;
+  color: #1E3A8A;
+  border-radius: 6px;
+  padding: 0.3em 0.5em;
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+/* === 图片与头像 === */
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === 页面标题 === */
+.page__title {
+  color: #1E3A8A;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
