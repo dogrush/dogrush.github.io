@@ -17,8 +17,11 @@
 // 示例：将链接颜色 (link color) 修改为 现代深蓝 (#0078D4)
 $link-color: #0078D4; 
 
-// 示例：如果您还想修改标题和主要文本颜色 (text color)，可以添加这一行
-// $text-color: #333333; // 比默认的深灰色更深一些
+// 示例：修改标题和主要文本颜色 (text color)
+$text-color: #333333; // 比默认的深灰色更深一些
+
+// 示例：修改页面顶部导航栏中链接的颜色（masthead）
+$text-color: #E87D00; // 比默认的深灰色更深一些
 
 @import
     "vendor/breakpoint/breakpoint",
