@@ -1,35 +1,36 @@
 /* =============================================================
-   简化版 Bright Scholar Blue
-   系统字体，保持 AcademicPages 默认样式，其余不改
+   简化版 AcademicPages 配置
+   主字体黑色，标题两种蓝色，链接和导航蓝色
    ============================================================= */
 
 /* =======================
-   1. 主字体颜色
+   1. 正文字体
    ======================= */
 body {
-  color: #000000; /* 正文字体设置为纯黑 */
+  color: #000000; /* 正文字体为纯黑 */
 }
 
 /* =======================
-   2. 标题颜色区分
+   2. 标题颜色
    ======================= */
-h1 { color: #104E8B; }  /* 深蓝 */
-h2 { color: #1E90FF; }  /* 亮蓝 */
-h3 { color: #4682B4; }  /* 钢蓝 */
-h4 { color: #5F9EA0; }  /* 暗浅蓝 */
-h5 { color: #6495ED; }  /* 玉蓝 / CornflowerBlue */
-h6 { color: #87CEFA; }  /* 浅蓝 / LightSkyBlue */
+h1, h2, h3 { 
+  color: #4B0082; /* 靛蓝 Indigo */
+}
+
+h4, h5, h6 { 
+  color: #003399; /* 北航蓝 Beihang Blue */
+}
 
 /* =======================
-   3. 链接强调
+   3. 正文链接
    ======================= */
 a {
   color: #1E90FF; /* 蓝色强调 */
-  text-decoration: none; /* 去掉下划线 */
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #104E8B; /* hover 深蓝 */
+  color: #003399; /* hover 北航蓝 */
   text-decoration: none;
 }
 
@@ -37,9 +38,9 @@ a:hover, a:focus {
    4. 导航栏链接
    ======================= */
 .navbar a, .site-nav a {
-  color: #1E90FF !important;
+  color: #003399 !important; /* 北航蓝 */
 }
 
 .navbar a:hover, .site-nav a:hover {
-  color: #104E8B !important;
+  color: #4B0082 !important; /* hover 靛蓝 */
 }
