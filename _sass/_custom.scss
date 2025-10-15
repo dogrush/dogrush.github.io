@@ -139,7 +139,7 @@ img {
    ======================= */
 .site-footer {
   background-color: #ffffff;
-  color: #7b7b7b;
+  color: #333333;  /* ✅ 由 #7b7b7b 改为 #333333，更深、更清晰 */
   border-top: 1px solid #e0e6ef;
   padding-top: 1em;
 }
@@ -150,10 +150,4 @@ img {
 
 .site-footer a:hover {
   color: #104e8b;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #dde6f2;
-  margin: 2em 0;
 }
