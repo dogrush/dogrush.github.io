@@ -13,6 +13,7 @@ Jianlei Yang is a Professor at Beihang University. His research focuses on intel
 - Intelligent Computing System and Architectures
 - ML/LLM Systems and Infrastructure
 - Systems for Emboided Intelligence
+- Final Research
 
 ## News
 - [2025.09] Paper accepted to *IEEE TCAS-I*!  
