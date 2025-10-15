@@ -89,7 +89,12 @@ a:focus {
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important; /* 保持原始形状，去掉圆角 */
+  border-radius: 0 !important;       /* 去掉圆角 */
+  border: none !important;           /* 去掉边框 */
+  box-shadow: none !important;       /* 去掉阴影 */
+  background: none !important;       /* 去掉背景色 */
+  padding: 0 !important;             /* 去掉内边距 */
+  margin: 0 !important;              /* 去掉外边距 */
 }
 
 /* =======================
