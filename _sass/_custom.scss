@@ -73,8 +73,9 @@ a:focus {
 }
 
 .sidebar a:hover {
-  color: #A31F34;       /* hover 红色 */
+  color: #A31F34;           /* hover 红色字体 */
   background-color: transparent;
+  text-decoration: none;    /* 禁用下划线 */
 }
 
 /* =======================
