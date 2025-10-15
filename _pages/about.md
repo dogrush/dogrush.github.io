@@ -10,9 +10,9 @@ redirect_from:
 Jianlei Yang is a Professor at Beihang University. His research focuses on intelligent computing systems, hardware security, and AI architectures.
 
 ## Research Interests
-- Intelligent computing systems and architectures  
-- Hardware acceleration for privacy-preserving computation  
-- Secure AI chips and post-quantum cryptography
+- Intelligent Computing System and Architectures
+- ML/LLM Systems and Infrastructure
+- Systems for Emboided Intelligence
 
 ## News
 - [2025.09] Paper accepted to *IEEE TCAS-I*!  
