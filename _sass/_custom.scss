@@ -1,6 +1,8 @@
 /* =============================================================
-   Bright Scholar Blue (System Font Version)
-   学术亮蓝主题 — 适用于学者、研究组、科研主页
+   Bright Scholar Blue (System Font Version) — 完整整合版
+   学术亮蓝主题，系统字体
+   页脚背景保持原始，仅字体加深
+   链接 hover 不显示下划线
    ============================================================= */
 
 /* =======================
@@ -15,7 +17,7 @@ body {
   font-size: 16px;
 }
 
-/* 标题：深蓝色，略有分隔 */
+/* 标题样式 */
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   color: #104e8b;
@@ -30,17 +32,17 @@ h1 {
 }
 
 /* =======================
-   2. 链接与交互
+   2. 链接样式
    ======================= */
 a {
   color: #1e90ff;
-  text-decoration: none;
-  transition: color 0.2s ease, border-bottom 0.2s ease;
+  text-decoration: none; /* 移除下划线 */
+  transition: color 0.2s ease;
 }
 
 a:hover, a:focus {
   color: #104e8b;
-  border-bottom: 1px solid #ffa500;
+  text-decoration: none; /* hover 不出现下划线 */
 }
 
 /* =======================
@@ -58,6 +60,7 @@ a:hover, a:focus {
 
 .navbar a:hover, .site-nav a:hover {
   color: #1e90ff !important;
+  text-decoration: none;
 }
 
 /* =======================
@@ -132,22 +135,41 @@ img {
 .btn:hover, .button:hover {
   background-color: #104e8b;
   box-shadow: 0 2px 6px rgba(30, 144, 255, 0.3);
+  text-decoration: none;
 }
 
 /* =======================
    8. 页脚与分割线
    ======================= */
 .site-footer {
-  background-color: #ffffff;
-  color: #333333;  /* ✅ 由 #7b7b7b 改为 #333333，更深、更清晰 */
+  /* 保留原背景颜色 */
+  color: #f0f0f0; /* 字体颜色加深，根据原背景可调整 */
   border-top: 1px solid #e0e6ef;
   padding-top: 1em;
 }
 
 .site-footer a {
-  color: #1e90ff;
+  color: #ffffff; /* 链接字体加深 */
+  text-decoration: none;
 }
 
 .site-footer a:hover {
+  color: #ffdd57; /* hover 可选高亮 */
+  text-decoration: none;
+}
+
+/* 分割线 */
+hr {
+  border: none;
+  border-top: 1px solid #dde6f2;
+  margin: 2em 0;
+}
+
+/* =======================
+   9. 页面标题
+   ======================= */
+.page__title {
   color: #104e8b;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
