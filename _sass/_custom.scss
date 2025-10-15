@@ -93,23 +93,20 @@ a:focus {
 }
 
 /* =======================
-   7. Sidebar 字体大小调整
+   7. Sidebar 字体调整
    ======================= */
 .sidebar,
 .sidebar a,
 .sidebar p,
 .sidebar li {
-  font-size: 0.9rem; /* 默认是 0.875rem，可以调大到 1rem 或更大 */
-  line-height: 1.2; /* 增加可读性 */
-}
-
-.sidebar a {
-  // color: #4472C4; /* 保持蓝色链接 */
-  // text-decoration: underline; /* 保留下划线 */
-  transition: color 0.25s ease; /* hover 平滑过渡 */
+  font-size: 0.9rem; /* 调整字体大小 */
+  line-height: 1.2;  /* 调整行高 */
+  color: #000000;    /* sidebar 字体黑色 */
+  text-decoration: none; /* 移除下划线 */
+  transition: color 0.25s ease; /* 保留平滑过渡效果（可选） */
 }
 
 .sidebar a:hover {
-  color: #A31F34; /* hover 红色 */
-  background-color: transparent;
+  color: #A31F34; /* hover 红色字体 */
+  background-color: transparent; /* 不使用背景色 */
 }
