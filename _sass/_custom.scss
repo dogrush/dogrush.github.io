@@ -1,16 +1,19 @@
 /* ============================================================= 
-   AcademicPages 最终统一风格配置
-   标题与链接采用科技蓝 #1A73E8
-   hover 时变为砖红色 #A31F34
+   AcademicPages 最终统一风格配置（大陆环境优化版）
+   字体采用系统通用字体栈，避免外网依赖
+   标题与链接采用科技蓝 #1A73E8，hover 时为砖红色 #A31F34
    ============================================================= */
 
 /* =======================
-   1. 正文字体
+   1. 正文字体与全局样式
    ======================= */
 body {
   color: #000000; /* 正文文字黑色 */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  background-color: #ffffff;
 }
 
 /* =======================
@@ -57,7 +60,7 @@ a:focus {
 }
 
 /* =======================
-   5. Sidebar 字体
+   5. Sidebar 样式
    ======================= */
 .sidebar,
 .sidebar a,
@@ -108,10 +111,10 @@ a:focus {
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important;   /* 去掉圆角 */
+  border-radius: 0 !important;   /* 保持原始形状，无圆角 */
   border: none !important;       /* 去掉边框 */
   box-shadow: none !important;   /* 去掉阴影 */
-  background: none !important;   /* 去掉背景色 */
-  padding: 0 !important;         /* 去掉内边距 */
-  margin: 0 !important;          /* 去掉外边距 */
+  background: none !important;   /* 去掉背景 */
+  padding: 0 !important;
+  margin: 0 !important;
 }
