@@ -1,8 +1,8 @@
 /* =============================================================
    AcademicPages 完整定制化样式
-   - 隐藏所有折叠菜单按钮
-   - 导航栏字体 1.6rem + 强制粗体（放最后保证生效）
-   - 导航栏与侧边栏链接默认无下划线，hover 显示砖红下划线
+   - Masthead 导航栏定制
+   - 导航栏字体 1.3rem + 粗体 + 科技蓝
+   - 链接默认无下划线，hover 砖红下划线
    ============================================================= */
 
 /* =======================
@@ -41,7 +41,7 @@ h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.03rem !important;
 h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
-   3. 链接样式（科技蓝 → hover 砖红）
+   3. 链接样式（正文 / 全局）
    ======================= */
 a {
   color: #1A73E8 !important;
@@ -83,7 +83,7 @@ a:focus {
 }
 
 /* =======================
-   6. Profile 图片样式
+   5. Profile 图片样式
    ======================= */
 .author-profile img,
 .profile-picture img,
@@ -98,33 +98,21 @@ a:focus {
 }
 
 /* =======================
-   8. 强制导航栏字体与样式（放最后保证生效）
+   6. Masthead 导航栏定制（桌面 & 移动端）
    ======================= */
-.navbar .nav-link,
-.navbar .navbar-nav > li > a,
-.navbar .navbar-nav li a,
-.site-nav li a,
-.navbar .site-nav li a,
-.navbar a,
-.site-nav__link,
-.site-nav__item a,
-.navbar .site-nav__link {
-  font-size: 1.6rem !important;     /* 强制字体大小 */
-  font-weight: 700 !important;      /* 强制粗体 */
-  color: #000000 !important;
+.masthead a,
+.masthead .masthead__menu a,
+.masthead .masthead__menu-item a {
+  font-size: 1.3rem !important;     /* 字号 */
+  font-weight: 700 !important;      /* 粗体 */
+  color: #1A73E8 !important;        /* 科技蓝 */
   text-decoration: none !important; /* 默认无下划线 */
 }
 
-.navbar .nav-link:hover,
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav li a:hover,
-.site-nav li a:hover,
-.navbar .site-nav li a:hover,
-.navbar a:hover,
-.site-nav__link:hover,
-.site-nav__item a:hover,
-.navbar .site-nav__link:hover {
-  color: #A31F34 !important;
+.masthead a:hover,
+.masthead .masthead__menu a:hover,
+.masthead .masthead__menu-item a:hover {
+  color: #A31F34 !important;        /* hover 砖红 */
   text-decoration: underline !important;
   background-color: transparent !important;
 }
