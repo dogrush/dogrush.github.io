@@ -1,6 +1,7 @@
 /* =============================================================
    AcademicPages 完整定制化样式
    - Masthead 导航栏定制
+   - Masthead 字体：Inter + Noto Sans SC
    - 导航栏字体 1.3rem + 半粗体 (600) + 科技蓝
    - 链接默认无下划线，hover 砖红下划线
    - 正文段落两端对齐
@@ -113,6 +114,7 @@ a:focus {
 .masthead a,
 .masthead .masthead__menu a,
 .masthead .masthead__menu-item a {
+  font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
   font-size: 1.3rem !important;     /* 字号 */
   font-weight: 600 !important;      /* 半粗体 */
   color: #1A73E8 !important;        /* 科技蓝 */
