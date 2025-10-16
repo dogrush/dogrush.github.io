@@ -2,6 +2,7 @@
    AcademicPages 完整定制化样式
    - 导航栏字体 1.6rem 强制粗体（桌面 & 移动端）
    - 隐藏所有折叠菜单按钮
+   - 导航栏和侧边栏默认链接无下划线，hover 显示砖红下划线
    ============================================================= */
 
 /* =======================
@@ -44,13 +45,14 @@ h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; ma
    ======================= */
 a {
   color: #1A73E8 !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;  /* 默认无下划线 */
   transition: color 0.25s ease !important;
 }
 
 a:hover,
 a:focus {
   color: #A31F34 !important;
+  text-decoration: underline !important; /* hover 显示下划线 */
   background-color: transparent !important;
 }
 
@@ -66,7 +68,7 @@ a:focus {
   color: #000000 !important;
   font-weight: 700 !important;
   font-size: 1.6rem !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;  /* 默认去掉下划线 */
   transition: color 0.25s ease !important;
 }
 
@@ -77,10 +79,11 @@ a:focus {
 .navbar .site-nav li a:hover,
 .navbar a:hover {
   color: #A31F34 !important;
+  text-decoration: underline !important;
   background-color: transparent !important;
 }
 
-/* 响应式移动端保证一致 */
+/* 响应式移动端保证字体一致 */
 @media (max-width: 768px) {
   .navbar .nav-link,
   .navbar .navbar-nav > li > a,
@@ -127,14 +130,14 @@ a:focus {
 
 .sidebar a {
   color: #1A73E8 !important;
-  text-decoration: none;
+  text-decoration: none !important;  /* 默认无下划线 */
   transition: color 0.25s ease;
 }
 
 .sidebar a:hover {
   color: #A31F34 !important;
+  text-decoration: underline !important;  /* hover 下显示下划线 */
   background-color: transparent;
-  text-decoration: underline;
 }
 
 /* =======================
