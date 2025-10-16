@@ -1,5 +1,5 @@
 /* ============================================================= 
-   AcademicPages 最终配色与样式整合（正文字体生效版）
+   AcademicPages 最终配色与样式整合（侧边栏链接科技蓝）
    ============================================================= */
 
 /* =======================
@@ -11,7 +11,7 @@ p,
 .post-content,
 .page__content,
 .main-content {
-  color: #000000 !important; /* 正文字体黑色 */
+  color: #000000 !important;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
   line-height: 1.7 !important;
   font-size: 1.05rem !important;
@@ -21,7 +21,7 @@ p,
    2. 所有标题（科技蓝）
    ======================= */
 h1, h2, h3, h4, h5, h6 {
-  color: #1A73E8 !important; /* 标题科技蓝 */
+  color: #1A73E8 !important;
   font-weight: 600;
 }
 
@@ -29,14 +29,14 @@ h1, h2, h3, h4, h5, h6 {
    3. 链接样式（科技蓝 → hover 砖红）
    ======================= */
 a {
-  color: #1A73E8 !important;           /* 链接科技蓝 */
+  color: #1A73E8 !important;
   text-decoration: underline;
   transition: color 0.25s ease;
 }
 
 a:hover,
 a:focus {
-  color: #A31F34 !important;           /* hover 砖红色 */
+  color: #A31F34 !important;
   background-color: transparent !important;
 }
 
@@ -47,7 +47,7 @@ a:focus {
 .navbar .navbar-nav li a,
 .site-nav li a,
 .navbar .site-nav li a {
-  color: #000000 !important;           /* 黑色字体 */
+  color: #000000 !important;
   text-decoration: underline;
   transition: color 0.25s ease;
 }
@@ -56,15 +56,14 @@ a:focus {
 .navbar .navbar-nav li a:hover,
 .site-nav li a:hover,
 .navbar .site-nav li a:hover {
-  color: #A31F34 !important;           /* hover 砖红 */
+  color: #A31F34 !important;
   background-color: transparent !important;
 }
 
 /* =======================
-   5. Sidebar 区域
+   5. Sidebar 区域（链接科技蓝）
    ======================= */
 .sidebar,
-.sidebar a,
 .sidebar p,
 .sidebar li {
   font-size: 1.0rem;
@@ -75,10 +74,17 @@ a:focus {
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
 }
 
-.sidebar a:hover {
-  color: #A31F34 !important;
-  background-color: transparent;
+/* 🔵 侧边栏链接颜色与 hover 效果 */
+.sidebar a {
+  color: #1A73E8 !important; /* 科技蓝 */
   text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.sidebar a:hover {
+  color: #A31F34 !important; /* hover 砖红 */
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* =======================
@@ -105,7 +111,7 @@ footer a:hover,
 
 footer::after,
 .site-footer::after {
-  content: "" !important; /* 移除多余符号箭头等 */
+  content: "" !important;
 }
 
 /* =======================
