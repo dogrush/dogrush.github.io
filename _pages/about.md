@@ -13,7 +13,6 @@ I am a Professor at Beihang University. My research focuses on intelligent compu
 - Intelligent Computing System and Architectures
 - ML/LLM Systems and Infrastructure
 - Systems for Emboided Intelligence
-- Final Research
 
 ## News
 - [2025.09] Paper accepted to *IEEE TCAS-I*!  
