@@ -83,19 +83,6 @@ a:focus {
 }
 
 /* =======================
-   5. 页脚隐藏
-   ======================= */
-footer,
-.site-footer {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-/* =======================
    6. Profile 图片样式
    ======================= */
 .author-profile img,
@@ -108,24 +95,6 @@ footer,
   background: none !important;
   padding: 0 !important;
   margin: 0 !important;
-}
-
-/* =======================
-   7. 隐藏所有折叠菜单按钮（hamburger / toggler）
-   ======================= */
-.navbar-toggler,
-.navbar-toggler-icon,
-.site-nav-toggle,
-.header-toggle,
-.menu-toggle {
-  display: none !important;
-  visibility: hidden !important;
-  width: 0 !important;
-  height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  background: none !important;
 }
 
 /* =======================
@@ -158,20 +127,4 @@ footer,
   color: #A31F34 !important;
   text-decoration: underline !important;
   background-color: transparent !important;
-}
-
-/* 响应式移动端保证字体一致 */
-@media (max-width: 768px) {
-  .navbar .nav-link,
-  .navbar .navbar-nav > li > a,
-  .navbar .navbar-nav li a,
-  .site-nav li a,
-  .navbar .site-nav li a,
-  .navbar a,
-  .site-nav__link,
-  .site-nav__item a,
-  .navbar .site-nav__link {
-    font-size: 1.6rem !important;
-    font-weight: 700 !important;
-  }
 }
