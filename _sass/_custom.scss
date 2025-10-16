@@ -1,9 +1,5 @@
 /* ============================================================= 
-   AcademicPages 完整样式配置
-   - 导航栏粗体
-   - 标题缩小
-   - 侧边栏文字略小
-   - 链接科技蓝
+   AcademicPages 完整样式配置（优化字号 + 导航栏粗体）
    ============================================================= */
 
 /* =======================
@@ -18,7 +14,7 @@ p,
   color: #000000 !important;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
   line-height: 1.6 !important;
-  font-size: 1rem !important;
+  font-size: 1rem !important;  /* 默认 16px */
 }
 
 /* =======================
@@ -29,7 +25,7 @@ p,
 .page-title {
   color: #1A73E8 !important;   /* 科技蓝 */
   font-weight: 600 !important;  /* 粗体 */
-  font-size: 1.5rem !important; /* 缩小字体 */
+  font-size: 1.6rem !important; /* 缩小字体，原来约 2rem */
   line-height: 1.3 !important;
   margin-bottom: 0.5rem;
 }
@@ -79,12 +75,12 @@ a:focus {
 }
 
 /* =======================
-   5. Sidebar 样式（文字和链接缩小）
+   5. Sidebar 样式（略小字体）
    ======================= */
 .sidebar,
 .sidebar p,
 .sidebar li {
-  font-size: 0.95rem !important;   /* 略小字体 */
+  font-size: 0.95rem !important;   /* 略小于正文 */
   line-height: 1.2;
   color: #000000 !important;
   text-decoration: none;
@@ -105,7 +101,7 @@ a:focus {
 }
 
 /* =======================
-   6. 页脚隐藏（彻底去掉 --> 问题）
+   6. 页脚隐藏（彻底去掉 --> 符号）
    ======================= */
 footer,
 .site-footer {
