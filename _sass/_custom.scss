@@ -1,6 +1,7 @@
 /* =============================================================
    AcademicPages 定制化样式配置
-   保证导航栏字体 1.6rem 强制粗体生效（桌面 & 移动端）
+   - 导航栏字体 1.6rem 强制粗体（桌面 & 移动端）
+   - 隐藏导航栏右侧菜单按钮（hamburger / navbar-toggler）
    ============================================================= */
 
 /* =======================
@@ -92,6 +93,30 @@ a:focus {
     font-weight: 700 !important;
   }
 }
+
+/* =======================
+   4b. 隐藏导航栏右侧菜单按钮（hamburger / navbar-toggler）
+   ======================= */
+.navbar-toggler,
+.navbar-toggler-icon {
+  display: none !important;       
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* 可选：仅桌面隐藏，移动端保留折叠菜单
+@media (min-width: 992px) {
+  .navbar-toggler,
+  .navbar-toggler-icon {
+    display: none !important;
+  }
+}
+*/
 
 /* =======================
    5. Sidebar 样式（字号 1rem）
