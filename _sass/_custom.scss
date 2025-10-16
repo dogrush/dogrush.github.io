@@ -1,11 +1,10 @@
 /* =============================================================
-   AcademicPages 完整定制化样式
+   AcademicPages 完整定制化样式（固定字号）
    - Masthead 导航栏定制
-   - Masthead 字体：Inter + Noto Sans SC
-   - 导航栏字体 1.2rem + 半粗体 (600) + 科技蓝
+   - 页面标题 & h1~h6 固定字体
+   - 正文 & 侧边栏固定字体
    - 链接默认无下划线，hover 砖红下划线
    - 正文段落两端对齐
-   - 标题 h1~h6 1rem~1.2rem 平滑递减
    ============================================================= */
 
 /* =======================
@@ -20,7 +19,7 @@ p,
   color: #000000 !important;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
   line-height: 1.6 !important;
-  font-size: 1rem !important;  /* 正文字号 */
+  font-size: 1rem !important;  /* 固定正文字号 */
 }
 
 /* =======================
@@ -29,7 +28,7 @@ p,
 .post-content p,
 .page__content p,
 .main-content p {
-  text-align: justify !important;  /* 两端对齐 */
+  text-align: justify !important;
 }
 
 /* =======================
@@ -39,18 +38,18 @@ p,
 .page-title {
   color: #1A73E8 !important;
   font-weight: 600 !important;
-  font-size: 1.2rem !important;   /* 页面 title 字号 1.2rem */
+  font-size: 1.2rem !important;  /* 页面标题固定字号 */
   line-height: 1.3 !important;
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
 }
 
-/* 五级标题 h1~h6，平滑递减 1.2rem → 1rem */
+/* 五级标题 h1~h6 固定字体，平滑过渡 1rem~1.2rem */
 h1 { color: #1A73E8 !important; font-weight: 600; font-size: 1.2rem !important; margin-top:1.1rem; margin-bottom:0.5rem; }
-h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.15rem !important; margin-top:1.05rem; margin-bottom:0.5rem; }
-h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.1rem !important; margin-top:1rem; margin-bottom:0.45rem; }
-h4 { color: #1A73E8 !important; font-weight: 600; font-size: 1.07rem !important; margin-top:0.95rem; margin-bottom:0.4rem; }
-h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.03rem !important; margin-top:0.9rem; margin-bottom:0.35rem; }
+h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.18rem !important; margin-top:1.05rem; margin-bottom:0.5rem; }
+h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.16rem !important; margin-top:1rem; margin-bottom:0.45rem; }
+h4 { color: #1A73E8 !important; font-weight: 600; font-size: 1.12rem !important; margin-top:0.95rem; margin-bottom:0.4rem; }
+h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.08rem !important; margin-top:0.9rem; margin-bottom:0.35rem; }
 h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
@@ -58,7 +57,7 @@ h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; ma
    ======================= */
 a {
   color: #1A73E8 !important;
-  text-decoration: none !important;  /* 默认无下划线 */
+  text-decoration: none !important;
   transition: color 0.25s ease !important;
 }
 
@@ -70,12 +69,12 @@ a:focus {
 }
 
 /* =======================
-   4. Sidebar 样式（字号 1rem）
+   4. Sidebar 样式（固定字号）
    ======================= */
 .sidebar,
 .sidebar p,
 .sidebar li {
-  font-size: 1rem !important;
+  font-size: 1rem !important;  /* 固定侧边栏字号 */
   line-height: 1.25;
   color: #000000 !important;
   text-decoration: none;
@@ -85,13 +84,13 @@ a:focus {
 
 .sidebar a {
   color: #1A73E8 !important;
-  text-decoration: none !important;  /* 默认无下划线 */
+  text-decoration: none !important;
   transition: color 0.25s ease;
 }
 
 .sidebar a:hover {
   color: #A31F34 !important;
-  text-decoration: underline !important;  /* hover 下显示下划线 */
+  text-decoration: underline !important;
   background-color: transparent;
 }
 
@@ -111,22 +110,22 @@ a:focus {
 }
 
 /* =======================
-   6. Masthead 导航栏定制（桌面 & 移动端）
+   6. Masthead 导航栏定制（固定字号）
    ======================= */
 .masthead a,
 .masthead .masthead__menu a,
 .masthead .masthead__menu-item a {
   font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
-  font-size: 1.2rem !important;     /* 导航栏字号 1.2rem */
-  font-weight: 600 !important;      /* 半粗体 */
-  color: #1A73E8 !important;        /* 科技蓝 */
-  text-decoration: none !important; /* 默认无下划线 */
+  font-size: 1.2rem !important;  /* 固定导航栏字号 */
+  font-weight: 600 !important;    /* 半粗体 */
+  color: #1A73E8 !important;      /* 科技蓝 */
+  text-decoration: none !important;
 }
 
 .masthead a:hover,
 .masthead .masthead__menu a:hover,
 .masthead .masthead__menu-item a:hover {
-  color: #A31F34 !important;        /* hover 砖红 */
+  color: #A31F34 !important;      /* hover 砖红 */
   text-decoration: underline !important;
   background-color: transparent !important;
 }
