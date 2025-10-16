@@ -100,12 +100,7 @@ a:focus {
 .navbar-toggler-icon,
 .site-nav-toggle,
 .header-toggle,
-.menu-toggle,
-/* 新增用于隐藏 AcademicPages/Minimal Mistakes 中切换按钮的类 */
-.nav__toggle,
-.navbar-header .btn-navbar,
-.navbar-header .nav-collapse-toggle,
-.btn-navbar {
+.menu-toggle {
   display: none !important;
   visibility: hidden !important;
   width: 0 !important;
@@ -114,13 +109,6 @@ a:focus {
   margin: 0 !important;
   border: none !important;
   background: none !important;
-}
-
-/* 确保在宽屏幕尺寸下也隐藏 nav__toggle */
-@media screen and (min-width: 64em) {
-    .nav__toggle {
-        display: none !important;
-    }
 }
 
 /* =======================
