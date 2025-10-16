@@ -1,5 +1,6 @@
 /* ============================================================= 
-   AcademicPages 最终配色与样式整合（侧边栏链接科技蓝）
+   AcademicPages 完整样式配置（标题缩小版）
+   适合国内环境，无外部字体依赖
    ============================================================= */
 
 /* =======================
@@ -18,11 +19,37 @@ p,
 }
 
 /* =======================
-   2. 所有标题（科技蓝）
+   2. 所有标题（科技蓝 + 缩小字体）
    ======================= */
-h1, h2, h3, h4, h5, h6 {
+h1 {
   color: #1A73E8 !important;
   font-weight: 600;
+  font-size: 1.8rem !important;
+}
+h2 {
+  color: #1A73E8 !important;
+  font-weight: 600;
+  font-size: 1.6rem !important;
+}
+h3 {
+  color: #1A73E8 !important;
+  font-weight: 600;
+  font-size: 1.4rem !important;
+}
+h4 {
+  color: #1A73E8 !important;
+  font-weight: 600;
+  font-size: 1.25rem !important;
+}
+h5 {
+  color: #1A73E8 !important;
+  font-weight: 600;
+  font-size: 1.1rem !important;
+}
+h6 {
+  color: #1A73E8 !important;
+  font-weight: 600;
+  font-size: 1rem !important;
 }
 
 /* =======================
@@ -33,7 +60,6 @@ a {
   text-decoration: underline;
   transition: color 0.25s ease;
 }
-
 a:hover,
 a:focus {
   color: #A31F34 !important;
@@ -41,27 +67,27 @@ a:focus {
 }
 
 /* =======================
-   4. 导航栏链接
+   4. 导航栏链接（黑色粗体 + 下划线）
    ======================= */
 .navbar .navbar-nav .nav-link,
 .navbar .navbar-nav li a,
 .site-nav li a,
 .navbar .site-nav li a {
-  color: #000000 !important;
-  text-decoration: underline;
+  color: #000000 !important;           /* 黑色字体 */
+  font-weight: 600 !important;         /* 粗体 */
+  text-decoration: underline;          /* 保留下划线 */
   transition: color 0.25s ease;
 }
-
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav li a:hover,
 .site-nav li a:hover,
 .navbar .site-nav li a:hover {
-  color: #A31F34 !important;
+  color: #A31F34 !important;           /* hover 砖红 */
   background-color: transparent !important;
 }
 
 /* =======================
-   5. Sidebar 区域（链接科技蓝）
+   5. Sidebar 样式（链接科技蓝）
    ======================= */
 .sidebar,
 .sidebar p,
@@ -70,48 +96,31 @@ a:focus {
   line-height: 1.2;
   color: #000000 !important;
   text-decoration: none;
-  transition: color 0.25s ease;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  transition: color 0.25s ease;
 }
-
-/* 🔵 侧边栏链接颜色与 hover 效果 */
 .sidebar a {
-  color: #1A73E8 !important; /* 科技蓝 */
+  color: #1A73E8 !important;          /* 科技蓝链接 */
   text-decoration: none;
   transition: color 0.25s ease;
 }
-
 .sidebar a:hover {
-  color: #A31F34 !important; /* hover 砖红 */
+  color: #A31F34 !important;          /* hover 砖红 */
   background-color: transparent;
   text-decoration: underline;
 }
 
 /* =======================
-   6. 页脚（确保无符号残留）
+   6. 页脚隐藏（彻底去掉 --> 问题）
    ======================= */
 footer,
 .site-footer {
-  color: #000000 !important;
-  font-size: 0.9rem;
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   border: none !important;
-  background: none !important;
-}
-
-footer a,
-.site-footer a {
-  color: #1A73E8 !important;
-  text-decoration: underline;
-}
-
-footer a:hover,
-.site-footer a:hover {
-  color: #A31F34 !important;
-}
-
-footer::after,
-.site-footer::after {
-  content: "" !important;
 }
 
 /* =======================
@@ -121,7 +130,7 @@ footer::after,
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important;
+  border-radius: 0 !important;   /* 保持原始形状 */
   border: none !important;
   box-shadow: none !important;
   background: none !important;
