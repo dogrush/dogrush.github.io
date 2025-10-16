@@ -1,7 +1,5 @@
 /* ============================================================= 
-   AcademicPages 完整样式配置（缩小正文与侧边栏字号1号）
-   - 导航栏字号保持原始
-   - 标题、正文、侧边栏统一缩小
+   AcademicPages 样式配置（正文/导航栏/标题/侧边栏优化）
    ============================================================= */
 
 /* =======================
@@ -15,28 +13,31 @@ p,
 .main-content {
   color: #000000 !important;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
-  line-height: 1.55 !important;       /* 行高略微减小 */
-  font-size: 0.95rem !important;       /* 原 1rem 缩小1号 */
+  line-height: 1.6 !important;
+  font-size: 1rem !important; /* 正文字号 1rem */
 }
 
 /* =======================
    2. 页面标题 / 所有 h1~h6
    ======================= */
+/* 页面 title */
 .post-title,
 .page-title {
   color: #1A73E8 !important;   /* 科技蓝 */
   font-weight: 600 !important;  /* 粗体 */
-  font-size: 1.5rem !important; /* 缩小字体 */
+  font-size: 1.3rem !important; /* 调整为 1.3rem */
   line-height: 1.3 !important;
-  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
 }
 
-h1 { color: #1A73E8 !important; font-weight: 600; font-size: 1.7rem !important; }
-h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.5rem !important; }
-h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.35rem !important; }
-h4 { color: #1A73E8 !important; font-weight: 600; font-size: 1.2rem !important; }
-h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.05rem !important; }
-h6 { color: #1A73E8 !important; font-weight: 600; font-size: 0.95rem !important; }
+/* 五级标题 h1~h6，字号从 1.3rem → 1rem，均匀递减 */
+h1 { color: #1A73E8 !important; font-weight: 600; font-size: 1.3rem !important; margin-top:1.1rem; margin-bottom:0.5rem; }
+h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.23rem !important; margin-top:1.05rem; margin-bottom:0.5rem; }
+h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.16rem !important; margin-top:1rem; margin-bottom:0.45rem; }
+h4 { color: #1A73E8 !important; font-weight: 600; font-size: 1.09rem !important; margin-top:0.95rem; margin-bottom:0.4rem; }
+h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.03rem !important; margin-top:0.9rem; margin-bottom:0.35rem; }
+h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
    3. 链接样式（科技蓝 → hover 砖红）
@@ -54,7 +55,7 @@ a:focus {
 }
 
 /* =======================
-   4. 导航栏链接（黑色 + 粗体 + 下划线）
+   4. 导航栏链接（黑色 + 粗体 + 下划线 + 放大字号）
    ======================= */
 .navbar .navbar-nav > li > a,
 .navbar .navbar-nav li a,
@@ -62,6 +63,7 @@ a:focus {
 .navbar .site-nav li a {
   color: #000000 !important;       /* 黑色字体 */
   font-weight: 700 !important;     /* 粗体 */
+  font-size: 1.3rem !important;    /* 导航栏字号放大 */
   text-decoration: underline;      /* 保留下划线 */
   transition: color 0.25s ease;
 }
@@ -75,13 +77,13 @@ a:focus {
 }
 
 /* =======================
-   5. Sidebar 样式（文字缩小）
+   5. Sidebar 样式（字号 1rem）
    ======================= */
 .sidebar,
 .sidebar p,
 .sidebar li {
-  font-size: 0.9rem !important;       /* 原 0.95rem 再减小一点 */
-  line-height: 1.15;
+  font-size: 1rem !important;       /* 侧边栏统一 1rem */
+  line-height: 1.25;
   color: #000000 !important;
   text-decoration: none;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
