@@ -101,8 +101,7 @@
 
     @include breakpoint($large) {
       // modified by Jianlei Yang
-      // padding: 5px;
-      padding: 0;
+      padding: 5px;
       border: 1px solid var(--global-border-color);
     }
   }
