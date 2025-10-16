@@ -1,7 +1,7 @@
 /* =============================================================
-   AcademicPages 定制化样式配置
+   AcademicPages 完整定制化样式
    - 导航栏字体 1.6rem 强制粗体（桌面 & 移动端）
-   - 隐藏导航栏右侧菜单按钮（hamburger / navbar-toggler）
+   - 隐藏所有折叠菜单按钮
    ============================================================= */
 
 /* =======================
@@ -20,11 +20,11 @@ p,
 }
 
 /* =======================
-   2. 页面标题 / 所有 h1~h6
+   2. 页面标题 / h1~h6
    ======================= */
 .post-title,
 .page-title {
-  color: #1A73E8 !important; 
+  color: #1A73E8 !important;
   font-weight: 600 !important;
   font-size: 1.3rem !important;
   line-height: 1.3 !important;
@@ -55,18 +55,17 @@ a:focus {
 }
 
 /* =======================
-   4. 导航栏链接（黑色 + 全粗体 + 字号 1.6rem）
+   4. 导航栏链接（黑色 + 强制粗体 + 字号 1.6rem）
    ======================= */
-/* 桌面端 & 移动端统一覆盖 */
 .navbar .nav-link,
 .navbar .navbar-nav > li > a,
 .navbar .navbar-nav li a,
 .site-nav li a,
 .navbar .site-nav li a,
 .navbar a {
-  color: #000000 !important;        /* 黑色字体 */
-  font-weight: 700 !important;      /* 强制粗体 */
-  font-size: 1.6rem !important;     /* 字号 1.6rem */
+  color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 1.6rem !important;
   text-decoration: underline !important;
   transition: color 0.25s ease !important;
 }
@@ -81,7 +80,7 @@ a:focus {
   background-color: transparent !important;
 }
 
-/* 响应式移动端确保字体一致 */
+/* 响应式移动端保证一致 */
 @media (max-width: 768px) {
   .navbar .nav-link,
   .navbar .navbar-nav > li > a,
@@ -95,11 +94,14 @@ a:focus {
 }
 
 /* =======================
-   4b. 隐藏导航栏右侧菜单按钮（hamburger / navbar-toggler）
+   5. 隐藏所有折叠菜单按钮（hamburger / toggler）
    ======================= */
 .navbar-toggler,
-.navbar-toggler-icon {
-  display: none !important;       
+.navbar-toggler-icon,
+.site-nav-toggle,
+.header-toggle,
+.menu-toggle {
+  display: none !important;
   visibility: hidden !important;
   width: 0 !important;
   height: 0 !important;
@@ -109,17 +111,8 @@ a:focus {
   background: none !important;
 }
 
-/* 可选：仅桌面隐藏，移动端保留折叠菜单
-@media (min-width: 992px) {
-  .navbar-toggler,
-  .navbar-toggler-icon {
-    display: none !important;
-  }
-}
-*/
-
 /* =======================
-   5. Sidebar 样式（字号 1rem）
+   6. Sidebar 样式（字号 1rem）
    ======================= */
 .sidebar,
 .sidebar p,
@@ -145,7 +138,7 @@ a:focus {
 }
 
 /* =======================
-   6. 页脚隐藏
+   7. 页脚隐藏
    ======================= */
 footer,
 .site-footer {
@@ -158,7 +151,7 @@ footer,
 }
 
 /* =======================
-   7. Profile 图片样式
+   8. Profile 图片样式
    ======================= */
 .author-profile img,
 .profile-picture img,
