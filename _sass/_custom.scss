@@ -1,42 +1,43 @@
 /* ============================================================= 
-   AcademicPages 最终统一风格配置（大陆环境优化版）
-   字体采用系统通用字体栈，避免外网依赖
-   标题与链接采用科技蓝 #1A73E8，hover 时为砖红色 #A31F34
+   AcademicPages 最终配色与样式整合（正文字体生效版）
    ============================================================= */
 
 /* =======================
-   1. 正文字体与全局样式
+   1. 正文字体（强制生效）
    ======================= */
-body {
-  color: #000000; /* 正文文字黑色 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
-               Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #ffffff;
+body,
+html,
+p,
+.post-content,
+.page__content,
+.main-content {
+  color: #000000 !important; /* 正文字体黑色 */
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
+  line-height: 1.7 !important;
+  font-size: 1.05rem !important;
 }
 
 /* =======================
-   2. 所有标题
+   2. 所有标题（科技蓝）
    ======================= */
 h1, h2, h3, h4, h5, h6 {
-  color: #1A73E8; /* 科技蓝标题 */
+  color: #1A73E8 !important; /* 标题科技蓝 */
   font-weight: 600;
 }
 
 /* =======================
-   3. 正文链接
+   3. 链接样式（科技蓝 → hover 砖红）
    ======================= */
 a {
-  color: #1A73E8;             /* 科技蓝链接 */
-  text-decoration: underline; /* 保留下划线 */
+  color: #1A73E8 !important;           /* 链接科技蓝 */
+  text-decoration: underline;
   transition: color 0.25s ease;
 }
 
 a:hover,
 a:focus {
-  color: #A31F34;             /* hover 砖红色 */
-  background-color: transparent; /* 无背景色 */
+  color: #A31F34 !important;           /* hover 砖红色 */
+  background-color: transparent !important;
 }
 
 /* =======================
@@ -46,8 +47,8 @@ a:focus {
 .navbar .navbar-nav li a,
 .site-nav li a,
 .navbar .site-nav li a {
-  color: #000000 !important;     /* 导航栏字体黑色 */
-  text-decoration: underline;    /* 保留下划线 */
+  color: #000000 !important;           /* 黑色字体 */
+  text-decoration: underline;
   transition: color 0.25s ease;
 }
 
@@ -55,53 +56,56 @@ a:focus {
 .navbar .navbar-nav li a:hover,
 .site-nav li a:hover,
 .navbar .site-nav li a:hover {
-  color: #A31F34 !important;     /* hover 砖红色 */
+  color: #A31F34 !important;           /* hover 砖红 */
   background-color: transparent !important;
 }
 
 /* =======================
-   5. Sidebar 样式
+   5. Sidebar 区域
    ======================= */
 .sidebar,
 .sidebar a,
 .sidebar p,
 .sidebar li {
-  font-size: 1.0rem;        /* 调整字体大小 */
-  line-height: 1.2;         /* 调整行高 */
-  color: #000000;           /* sidebar 黑色字体 */
-  text-decoration: none;    /* 不保留下划线 */
+  font-size: 1.0rem;
+  line-height: 1.2;
+  color: #000000 !important;
+  text-decoration: none;
   transition: color 0.25s ease;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
 }
 
 .sidebar a:hover {
-  color: #A31F34;           /* hover 砖红色字体 */
+  color: #A31F34 !important;
   background-color: transparent;
-  text-decoration: none;    /* 禁用下划线 */
+  text-decoration: none;
 }
 
 /* =======================
-   6. 页脚样式（如保留）
+   6. 页脚（确保无符号残留）
    ======================= */
-.site-footer,
-.site-footer p,
-.site-footer span,
-.site-footer li,
-.site-footer .container,
-.site-footer .footer-inner {
-  color: #000000 !important;          /* 页脚字体黑色 */
-  background-color: #ffffff !important; /* 背景白色 */
-  border: none !important;            /* 去掉可能的框线 */
+footer,
+.site-footer {
+  color: #000000 !important;
+  font-size: 0.9rem;
+  border: none !important;
+  background: none !important;
 }
 
+footer a,
 .site-footer a {
-  color: #1A73E8 !important;          /* 页脚链接科技蓝 */
+  color: #1A73E8 !important;
   text-decoration: underline;
-  transition: color 0.25s ease;
 }
 
+footer a:hover,
 .site-footer a:hover {
-  color: #A31F34 !important;          /* hover 砖红色 */
-  background-color: transparent !important;
+  color: #A31F34 !important;
+}
+
+footer::after,
+.site-footer::after {
+  content: "" !important; /* 移除多余符号箭头等 */
 }
 
 /* =======================
@@ -111,10 +115,10 @@ a:focus {
 .profile-picture img,
 .author-profile .avatar,
 .profile-picture img.avatar {
-  border-radius: 0 !important;   /* 保持原始形状，无圆角 */
-  border: none !important;       /* 去掉边框 */
-  box-shadow: none !important;   /* 去掉阴影 */
-  background: none !important;   /* 去掉背景 */
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
