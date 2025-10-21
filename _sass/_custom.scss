@@ -1,14 +1,14 @@
 /* =============================================================
-   AcademicPages 完整定制化样式（固定字号）
+   AcademicPages 完整定制化样式（终极版）
    - Masthead 导航栏定制
    - 页面标题 & h1~h6 固定字体
    - 正文 & 侧边栏固定字体
-   - 链接默认无下划线，hover 砖红下划线
+   - 所有链接无下划线，hover 保持颜色变化
    - 正文段落两端对齐
    ============================================================= */
 
 /* =======================
-   1. 正文字体（正文页）
+   1. 正文字体
    ======================= */
 body,
 html,
@@ -22,9 +22,7 @@ p,
   font-size: 1rem !important;  /* 固定正文字号 */
 }
 
-/* =======================
-   1.1 正文段落两端对齐
-   ======================= */
+/* 1.1 正文段落两端对齐 */
 .post-content p,
 .page__content p,
 .main-content p {
@@ -38,13 +36,13 @@ p,
 .page-title {
   color: #1A73E8 !important;
   font-weight: 600 !important;
-  font-size: 1.2rem !important;  /* 页面标题固定字号 */
+  font-size: 1.2rem !important;
   line-height: 1.3 !important;
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
 }
 
-/* 五级标题 h1~h6 固定字体，平滑过渡 1rem~1.2rem */
+/* h1~h6 固定字体 */
 h1 { color: #1A73E8 !important; font-weight: 600; font-size: 1.2rem !important; margin-top:1.1rem; margin-bottom:0.5rem; }
 h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.18rem !important; margin-top:1.05rem; margin-bottom:0.5rem; }
 h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.16rem !important; margin-top:1rem; margin-bottom:0.45rem; }
@@ -53,49 +51,62 @@ h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.08rem !important;
 h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
-   3. 链接样式（正文 / 全局）
+   3. 全局链接样式（无下划线）
    ======================= */
-a {
-  color: #1A73E8 !important;
-  text-decoration: none !important;
+a,
+a:hover,
+a:focus,
+a:active,
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus,
+.masthead a,
+.masthead a:hover,
+.masthead a:focus,
+.post-title a,
+.post-title a:hover,
+.page-title a,
+.page-title a:hover,
+.archive__item-title a,
+.archive__item-title a:hover,
+.post-card a,
+.post-card a:hover,
+.page-card a,
+.page-card a:hover,
+.publication-card a,
+.publication-card a:hover {
+  color: inherit;           /* 默认颜色继承，可覆盖 */
+  text-decoration: none !important;  /* 去掉所有下划线 */
   transition: color 0.25s ease !important;
 }
 
+/* Hover 颜色变化（砖红） */
 a:hover,
-a:focus {
+a:focus,
+a:active,
+.sidebar a:hover,
+.sidebar a:focus,
+.masthead a:hover,
+.masthead a:focus {
   color: #A31F34 !important;
-  text-decoration: underline !important;
   background-color: transparent !important;
 }
 
 /* =======================
-   4. Sidebar 样式（固定字号）
+   4. Sidebar 样式
    ======================= */
 .sidebar,
 .sidebar p,
 .sidebar li {
-  font-size: 1rem !important;  /* 固定侧边栏字号 */
+  font-size: 1rem !important;
   line-height: 1.25;
   color: #000000 !important;
-  text-decoration: none;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
   transition: color 0.25s ease;
 }
 
-.sidebar a {
-  color: #1A73E8 !important;
-  text-decoration: none !important;
-  transition: color 0.25s ease;
-}
-
-.sidebar a:hover {
-  color: #A31F34 !important;
-  text-decoration: underline !important;
-  background-color: transparent;
-}
-
 /* =======================
-   5. Profile 图片样式
+   5. Profile / 图片样式
    ======================= */
 .author-profile img,
 .profile-picture img,
@@ -110,22 +121,36 @@ a:focus {
 }
 
 /* =======================
-   6. Masthead 导航栏定制（固定字号）
+   6. Masthead 导航栏
    ======================= */
 .masthead a,
 .masthead .masthead__menu a,
 .masthead .masthead__menu-item a {
   font-family: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
-  font-size: 1.2rem !important;  /* 固定导航栏字号 */
-  font-weight: 600 !important;    /* 半粗体 */
-  color: #1A73E8 !important;      /* 科技蓝 */
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: #1A73E8 !important;
   text-decoration: none !important;
 }
 
 .masthead a:hover,
 .masthead .masthead__menu a:hover,
 .masthead .masthead__menu-item a:hover {
-  color: #A31F34 !important;      /* hover 砖红 */
-  text-decoration: underline !important;
+  color: #A31F34 !important;
+  text-decoration: none !important;  /* 去掉 hover 下划线 */
   background-color: transparent !important;
+}
+
+/* =======================
+   7. 额外元素 / 子页面卡片链接去下划线
+   ======================= */
+.post-card a,
+.post-card a:hover,
+.page-card a,
+.page-card a:hover,
+.publication-card a,
+.publication-card a:hover,
+.archive__item-title a,
+.archive__item-title a:hover {
+  text-decoration: none !important;
 }
