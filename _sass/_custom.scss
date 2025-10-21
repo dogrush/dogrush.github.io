@@ -143,3 +143,18 @@ a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; backg
   color: $color-accent;  /* 保持与整体配色一致 */
   font-family: $font-ui;
 }
+
+/* =======================
+   全局去除链接下划线
+   ======================= */
+a,
+a:hover,
+a:focus,
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus,
+.masthead a,
+.masthead a:hover,
+.masthead a:focus {
+  text-decoration: none !important;
+}
