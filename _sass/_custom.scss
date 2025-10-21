@@ -2,6 +2,7 @@
    AcademicPages 定制样式（hover 无下划线，全局浅蓝背景）
    - 导航栏 hover 无背景，仅变色
    - 其他链接 hover 浅科技蓝背景 (#E6F0FF)
+   - 修复 list__item hover 下划线问题
    ============================================================= */
 
 /* =======================
@@ -124,12 +125,9 @@ a:focus,
 }
 
 /* =======================
-   7. 修复 list__item hover 下划线问题
+   7. 修复 list__item hover 标题下划线问题（关键）
    ======================= */
-.list__item a:hover,
-.list__item a:focus,
-.list__item:hover a {
+.list__item:hover .archive__item-title a,
+.list__item:hover .archive__item-title a:hover {
   text-decoration: none !important;
-  color: #A31F34 !important;              /* 与全局 hover 一致 */
-  background-color: #E6F0FF !important;   /* 保持视觉一致 */
 }
