@@ -1,10 +1,8 @@
 /* =============================================================
-   AcademicPages 完整定制化样式（终极版）
-   - Masthead 导航栏定制
-   - 页面标题 & h1~h6 固定字体
-   - 正文 & 侧边栏固定字体
-   - 所有链接 hover 效果与导航栏一致（砖红，无下划线）
-   - 正文段落两端对齐
+   AcademicPages 定制样式（无下划线 hover + 科技蓝背景）
+   - Hover 背景：#F0F7FF
+   - Hover 字体：#A31F34
+   - 所有链接 hover 无下划线
    ============================================================= */
 
 /* =======================
@@ -19,10 +17,10 @@ p,
   color: #000000 !important;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif !important;
   line-height: 1.6 !important;
-  font-size: 1rem !important;  /* 固定正文字号 */
+  font-size: 1rem !important;
 }
 
-/* 1.1 正文段落两端对齐 */
+/* 正文段落两端对齐 */
 .post-content p,
 .page__content p,
 .main-content p {
@@ -42,7 +40,6 @@ p,
   margin-bottom: 0.6rem;
 }
 
-/* h1~h6 固定字体 */
 h1 { color: #1A73E8 !important; font-weight: 600; font-size: 1.2rem !important; margin-top:1.1rem; margin-bottom:0.5rem; }
 h2 { color: #1A73E8 !important; font-weight: 600; font-size: 1.18rem !important; margin-top:1.05rem; margin-bottom:0.5rem; }
 h3 { color: #1A73E8 !important; font-weight: 600; font-size: 1.16rem !important; margin-top:1rem; margin-bottom:0.45rem; }
@@ -51,45 +48,26 @@ h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.08rem !important;
 h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
-   3. 全局链接样式
+   3. 链接样式（全局统一）
    ======================= */
-a,
-a:focus,
-a:active,
-.sidebar a,
-.sidebar a:focus,
-.sidebar a:active,
-.masthead a,
-.masthead .masthead__menu a,
-.masthead .masthead__menu-item a,
-.post-title a,
-.page-title a,
-.archive__item-title a,
-.post-card a,
-.page-card a,
-.publication-card a {
-  color: #1A73E8 !important;          /* 默认颜色科技蓝 */
-  text-decoration: none !important;   /* 默认无下划线 */
-  transition: color 0.25s ease !important;
+a {
+  color: #1A73E8 !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  background-color: transparent !important;
 }
 
-/* Hover / Focus / Active 效果（统一导航栏样式） */
 a:hover,
 a:focus,
-a:active,
-.sidebar a:hover,
-.sidebar a:focus,
-.masthead a:hover,
-.masthead a:focus,
-.post-title a:hover,
-.page-title a:hover,
 .archive__item-title a:hover,
-.post-card a:hover,
-.page-card a:hover,
-.publication-card a:hover {
-  color: #A31F34 !important;         /* 砖红 */
-  text-decoration: none !important;  /* 无下划线 */
-  background-color: transparent !important;
+.archive__item-title a:focus,
+.sidebar a:hover,
+.masthead a:hover,
+.masthead .masthead__menu a:hover,
+.masthead .masthead__menu-item a:hover {
+  color: #A31F34 !important;
+  background-color: #F0F7FF !important;
+  text-decoration: none !important;
 }
 
 /* =======================
@@ -101,12 +79,19 @@ a:active,
   font-size: 1rem !important;
   line-height: 1.25;
   color: #000000 !important;
+  text-decoration: none;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
   transition: color 0.25s ease;
 }
 
+.sidebar a {
+  color: #1A73E8 !important;
+  text-decoration: none !important;
+  transition: color 0.25s ease;
+}
+
 /* =======================
-   5. Profile / 图片样式
+   5. Profile 图片样式
    ======================= */
 .author-profile img,
 .profile-picture img,
@@ -137,31 +122,6 @@ a:active,
 .masthead .masthead__menu a:hover,
 .masthead .masthead__menu-item a:hover {
   color: #A31F34 !important;
+  background-color: #F0F7FF !important;
   text-decoration: none !important;
-  background-color: transparent !important;
-}
-
-/* =======================
-   7. 子页面 / 卡片 / 归档标题链接
-   ======================= */
-.post-card a,
-.post-card a:hover,
-.page-card a,
-.page-card a:hover,
-.publication-card a,
-.publication-card a:hover,
-.archive__item-title a,
-.archive__item-title a:hover,
-.archive__item-title a:focus,
-.archive__item-title a:active {
-  text-decoration: none !important;
-  color: #1A73E8 !important;  /* 默认颜色 */
-}
-
-.archive__item-title a:hover,
-.archive__item-title a:focus,
-.archive__item-title a:active {
-  color: #A31F34 !important;         /* hover 与导航栏一致 */
-  background-color: transparent !important;
-  text-decoration: none !important;  /* 去掉下划线 */
 }
