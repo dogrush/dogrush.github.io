@@ -144,7 +144,7 @@ a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; backg
 }
 
 /* =======================
-   全局去除所有链接下划线（包括标题链接）
+   全面去掉所有链接下划线（包括标题、卡片、子页面链接）
    ======================= */
 a,
 a:hover,
@@ -160,6 +160,13 @@ a:focus,
 .page-title a,
 .page-title a:hover,
 .archive__item-title a,
-.archive__item-title a:hover {
+.archive__item-title a:hover,
+.post-card a,
+.post-card a:hover,
+.page-card a,
+.page-card a:hover,
+.publication-card a,
+.publication-card a:hover {
   text-decoration: none !important;
 }
+
