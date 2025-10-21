@@ -29,14 +29,14 @@ author:
   bio              : "Jianlei Yang is a Professor in Computer Science at Beihang University."
   location         : "Beijing, China"
   employer         : "Beihang University"
-  uri              : "https://shi.buaa.edu.cn/jianlei/zh_CN/index.htm"
+  uri              : "https://www.ci-lab.net/"
   email            : "jianlei@buaa.edu.cn" 
 
   # Academic websites
   academia         : # URL
-  arxiv            : "https://arxiv.org/a/yang_j_19.html"
   googlescholar    : "https://scholar.google.com/citations?user=HLEelmYAAAAJ"
   dblp             : "https://dblp.org/pid/99/9547-1.html"
+  arxiv            : "https://arxiv.org/a/yang_j_19.html"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "http://orcid.org/0000-0001-8424-7040"
