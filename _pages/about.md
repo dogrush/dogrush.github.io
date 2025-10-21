@@ -30,4 +30,3 @@ I am a Professor at Beihang University. My research focuses on intelligent compu
 - [2025.09] One journal paper accepted by *TCAD*, and two conference papers accepted by *ICCD* and *ASP-DAC*.
 - [2025.08] Our LLM research project is approved by NSFC funding.
 - [2025.06] One Paper accepted by *DAC 2025*.
-
