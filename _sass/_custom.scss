@@ -154,3 +154,14 @@ a:active,
 .archive__item-title a:hover {
   text-decoration: none !important;
 }
+
+.archive__item-title a,
+.archive__item-title a:focus,
+.archive__item-title a:active {
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  color: #A31F34 !important;   /* hover 颜色砖红 */
+  text-decoration: none !important;  /* hover 下划线去掉 */
+}
