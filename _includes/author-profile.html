@@ -165,6 +165,16 @@
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
+
+      {% if site.author.dblp %}
+      <li class="author-profile-item author-profile-dblp">
+        <a href="{{ site.author.dblp }}" target="_blank" rel="noopener noreferrer">
+          <!-- 轻量文字/图标展示（按项目图标风格调整） -->
+          <span class="author-icon">DBLP</span>
+          <span class="author-label">DBLP</span>
+        </a>
+      </li>
+      {% endif %}
     </ul>
   </div>
 </div>
