@@ -9,13 +9,13 @@ redirect_from:
 
 I am a Professor at Beihang University. My research focuses on intelligent computing systems, emerging computer architectures, and ML/AI infrastructure. I lead the Computational Intelligence research group (CI-Lab) in Beihang University. Our group is dedicated to advancing the frontiers of intelligent computing through innovative research and development. We explore a wide range of topics including machine learning systems, large language model (LLM) infrastructure, and systems for embodied intelligence.
 
-## Academic and Work Experience
+## Education and Work Experience
 
-- 2024.11-Present Professor, School of Computer Science and Engineering, Beihang University, Beijing, China
-- 2016.02-2024.11 Associate Professor, School of Computer Science and Engineering, Beihang University, Beijing, China
-- 2015.11-2016.01 Postdoc, Electrical and Computer Engineering, University of Pittsburgh, Pennsyvasia, PA, USA
-- 2013.09-2014.06 Research Intern, Intel Labs China, Beijing, China
-- 2009.09-2014.07 PhD, Computer Science, Tsinghua University, Beijing, China
+- 2024.11-Present Professor, School of Computer Science and Engineering, Beihang University
+- 2016.02-2024.11 Associate Professor, School of Computer Science and Engineering, Beihang University
+- 2015.11-2016.01 Postdoc, Electrical and Computer Engineering, University of Pittsburgh
+- 2013.09-2014.06 Research Intern, Intel Labs China
+- 2009.09-2014.07 PhD, Computer Science, Tsinghua University
 
 ## Research Interests
 
