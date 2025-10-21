@@ -144,17 +144,24 @@ a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; backg
 }
 
 /* =======================
-   全面去掉所有链接下划线（包括标题、卡片、子页面链接）
+   全面去掉所有链接下划线（hover、focus、active）
    ======================= */
 a,
 a:hover,
 a:focus,
-.sidebar a,
-.sidebar a:hover,
-.sidebar a:focus,
-.masthead a,
-.masthead a:hover,
-.masthead a:focus,
+a:active,
+h1 a,
+h1 a:hover,
+h2 a,
+h2 a:hover,
+h3 a,
+h3 a:hover,
+h4 a,
+h4 a:hover,
+h5 a,
+h5 a:hover,
+h6 a,
+h6 a:hover,
 .post-title a,
 .post-title a:hover,
 .page-title a,
@@ -166,7 +173,14 @@ a:focus,
 .page-card a,
 .page-card a:hover,
 .publication-card a,
-.publication-card a:hover {
+.publication-card a:hover,
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus,
+.masthead a,
+.masthead a:hover,
+.masthead a:focus {
   text-decoration: none !important;
 }
+
 
