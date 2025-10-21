@@ -147,8 +147,20 @@ a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; backg
 /* =======================
    全局去除所有链接下划线（包括标题链接）
    ======================= */
-body a,
-body a:hover,
-body a:focus {
-  text-decoration: none;
+a,
+a:hover,
+a:focus,
+.sidebar a,
+.sidebar a:hover,
+.sidebar a:focus,
+.masthead a,
+.masthead a:hover,
+.masthead a:focus,
+.post-title a,
+.post-title a:hover,
+.page-title a,
+.page-title a:hover,
+.archive__item-title a,
+.archive__item-title a:hover {
+  text-decoration: none !important;
 }
