@@ -80,6 +80,7 @@ a {
   text-decoration: none;
   transition: color $transition-fast;
   -webkit-text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; background-color: transparent; }
 
