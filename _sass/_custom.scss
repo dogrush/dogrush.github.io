@@ -1,8 +1,7 @@
 /* =============================================================
-   AcademicPages 定制样式（无下划线 hover + 科技蓝背景）
-   - Hover 背景：#F0F7FF
-   - Hover 字体：#A31F34
-   - 所有链接 hover 无下划线
+   AcademicPages 定制样式（hover 无下划线，全局浅蓝背景）
+   - 导航栏 hover 无背景，仅变色
+   - 其他链接 hover 浅科技蓝背景 (#F0F7FF)
    ============================================================= */
 
 /* =======================
@@ -48,7 +47,7 @@ h5 { color: #1A73E8 !important; font-weight: 600; font-size: 1.08rem !important;
 h6 { color: #1A73E8 !important; font-weight: 600; font-size: 1rem !important; margin-top:0.85rem; margin-bottom:0.3rem; }
 
 /* =======================
-   3. 链接样式（全局统一）
+   3. 链接样式（全局）
    ======================= */
 a {
   color: #1A73E8 !important;
@@ -57,14 +56,12 @@ a {
   background-color: transparent !important;
 }
 
+/* hover 效果：全站链接统一浅蓝背景 */
 a:hover,
 a:focus,
 .archive__item-title a:hover,
 .archive__item-title a:focus,
-.sidebar a:hover,
-.masthead a:hover,
-.masthead .masthead__menu a:hover,
-.masthead .masthead__menu-item a:hover {
+.sidebar a:hover {
   color: #A31F34 !important;
   background-color: #F0F7FF !important;
   text-decoration: none !important;
@@ -79,7 +76,6 @@ a:focus,
   font-size: 1rem !important;
   line-height: 1.25;
   color: #000000 !important;
-  text-decoration: none;
   font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
   transition: color 0.25s ease;
 }
@@ -118,10 +114,11 @@ a:focus,
   text-decoration: none !important;
 }
 
+/* 导航栏 hover：仅变红，不加背景 */
 .masthead a:hover,
 .masthead .masthead__menu a:hover,
 .masthead .masthead__menu-item a:hover {
   color: #A31F34 !important;
-  background-color: #F0F7FF !important;
+  background-color: transparent !important;
   text-decoration: none !important;
 }
