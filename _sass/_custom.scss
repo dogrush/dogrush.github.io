@@ -69,14 +69,16 @@ a:active,
 .page-title a:hover,
 .archive__item-title a,
 .archive__item-title a:hover,
+.archive__item-title a:focus,
+.archive__item-title a:active,
 .post-card a,
 .post-card a:hover,
 .page-card a,
 .page-card a:hover,
 .publication-card a,
 .publication-card a:hover {
-  color: inherit;           /* 默认颜色继承，可覆盖 */
-  text-decoration: none !important;  /* 去掉所有下划线 */
+  color: inherit !important;           /* 默认颜色继承，可覆盖 */
+  text-decoration: none !important;    /* 去掉所有下划线 */
   transition: color 0.25s ease !important;
 }
 
@@ -87,9 +89,11 @@ a:active,
 .sidebar a:hover,
 .sidebar a:focus,
 .masthead a:hover,
-.masthead a:focus {
+.masthead a:focus,
+.archive__item-title a:hover {
   color: #A31F34 !important;
   background-color: transparent !important;
+  text-decoration: none !important; /* 确保 hover 下划线去掉 */
 }
 
 /* =======================
@@ -137,12 +141,12 @@ a:active,
 .masthead .masthead__menu a:hover,
 .masthead .masthead__menu-item a:hover {
   color: #A31F34 !important;
-  text-decoration: none !important;  /* 去掉 hover 下划线 */
+  text-decoration: none !important;
   background-color: transparent !important;
 }
 
 /* =======================
-   7. 额外元素 / 子页面卡片链接去下划线
+   7. 子页面 / 卡片 / 归档标题链接去下划线
    ======================= */
 .post-card a,
 .post-card a:hover,
@@ -151,17 +155,8 @@ a:active,
 .publication-card a,
 .publication-card a:hover,
 .archive__item-title a,
-.archive__item-title a:hover {
-  text-decoration: none !important;
-}
-
-.archive__item-title a,
+.archive__item-title a:hover,
 .archive__item-title a:focus,
 .archive__item-title a:active {
   text-decoration: none !important;
-}
-
-.archive__item-title a:hover {
-  color: #A31F34 !important;   /* hover 颜色砖红 */
-  text-decoration: none !important;  /* hover 下划线去掉 */
 }
