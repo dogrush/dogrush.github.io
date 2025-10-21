@@ -1,7 +1,7 @@
 /* =============================================================
-   AcademicPages 定制样式（hover 无下划线，全局浅蓝背景）
+   AcademicPages 定制样式（hover 无下划线，浅科技蓝背景 #E3F0FF）
    - 导航栏 hover 无背景，仅变色
-   - 其他链接 hover 浅科技蓝背景 (#F0F7FF)
+   - 其他链接 hover 浅科技蓝背景
    ============================================================= */
 
 /* =======================
@@ -56,14 +56,14 @@ a {
   background-color: transparent !important;
 }
 
-/* hover 效果：全站链接统一浅蓝背景 */
+/* hover 效果：全站链接统一浅蓝背景（比 F0F7FF 稍深） */
 a:hover,
 a:focus,
 .archive__item-title a:hover,
 .archive__item-title a:focus,
 .sidebar a:hover {
   color: #A31F34 !important;
-  background-color: #F0F7FF !important;
+  background-color: #E3F0FF !important;
   text-decoration: none !important;
 }
 
