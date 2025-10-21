@@ -131,3 +131,14 @@ a:hover, a:focus { color: $color-accent-hover; text-decoration: underline; backg
   a { color: color-mix(in srgb, $color-accent 80%, white); }
 }
 // ...existing code...
+
+/* =======================
+   侧边栏姓名字体调整
+   ======================= */
+.author__name, .author-name {
+  font-size: 1.2rem;   /* 原本大约是 1rem，可根据喜好调节 */
+  font-weight: 700;    /* 加粗以突出姓名 */
+  line-height: 1.3;
+  color: $color-accent;  /* 保持与整体配色一致 */
+  font-family: $font-ui;
+}
