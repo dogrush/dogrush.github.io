@@ -23,7 +23,7 @@ I am a Professor at Beihang University. My research focuses on intelligent compu
 - ML/LLM systems and infrastructure
 - Systems for embodied intelligence
 
-## News
+## Recent News
 
 - [2025.11] Invited talk on *CCF DAC 2025*.
 - [2025.10] One journal paper accepted by *TC*.
