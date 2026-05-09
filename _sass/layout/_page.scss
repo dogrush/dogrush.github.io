@@ -45,7 +45,7 @@
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-medium;
 }
 
 .page__content {
@@ -56,7 +56,7 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: $type-size-medium;
   }
 
   /* paragraph indents */
@@ -93,11 +93,11 @@
   dd {
     margin-left: 1em;
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-small;
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: $type-size-small;
   }
 
   /* blockquote citations */
@@ -151,10 +151,10 @@
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-large;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: $type-size-large;
       }
     }
   }
@@ -174,7 +174,7 @@
   padding: 2px 5px;
   color: #fff;
   font-family: $caption-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-small;
   background: #000;
   text-align: right;
   z-index: 5;
@@ -216,7 +216,7 @@
 
 .page__share-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
   text-transform: uppercase;
 }
 
@@ -229,7 +229,7 @@
   margin-top: 2em;
   color: var(--global-text-color-light);
   font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
 
   p {
     margin: 0;
@@ -242,7 +242,7 @@
 
 .page__meta-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
   text-transform: uppercase;
 }
 
@@ -289,7 +289,7 @@
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
   border-top: 1px solid var(--global-border-color);
   text-transform: uppercase;
 }
@@ -396,6 +396,6 @@
 
 .page__related-title {
   margin-bottom: 10px;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
   text-transform: uppercase;
 }

@@ -30,6 +30,11 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 /* Type scale */
+$type-size-large  : 1.75em;   // 28px - 大标题
+$type-size-medium : 1.4em;    // 22.4px - 正文
+$type-size-small  : 1.12em;   // 17.92px - 小字
+
+/* Legacy type scale (deprecated, kept for reference) */
 $type-size-1                : 2.441em;  // ~39.056px
 $type-size-2                : 1.953em;  // ~31.248px
 $type-size-3                : 1.563em;  // ~25.008px

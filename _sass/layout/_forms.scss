@@ -62,7 +62,7 @@ label {
   cursor: pointer;
 
   small {
-    font-size: $type-size-6;
+    font-size: $type-size-small;
   }
 
   input,
@@ -377,7 +377,7 @@ select:focus {
   margin-bottom: 20px;
   padding: 8px 20px;
   display: inline-block;
-  font-size: $type-size-6;
+  font-size: $type-size-small;
   background-color: #fff;
   color: #000;
   border-width: 2px !important;
