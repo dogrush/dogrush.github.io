@@ -55,8 +55,12 @@
     border-bottom: 1px solid var(--global-border-color);
   }
 
-  p, li, dl {
+  p, dl {
     font-size: $type-size-medium;
+  }
+
+  li {
+    font-size: $type-size-small;
   }
 
   /* paragraph indents */
