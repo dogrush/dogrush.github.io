@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#E8F5E9"/>
+  <text x="200" y="140" font-family="Arial, sans-serif" font-size="18" fill="#2E7D32" text-anchor="middle">ML/LLM Systems</text>
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="18" fill="#2E7D32" text-anchor="middle">&amp; Infrastructure</text>
+</svg>

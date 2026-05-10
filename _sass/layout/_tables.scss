@@ -5,7 +5,6 @@
 table {
   margin-bottom: 1em;
   width: 100%;
-  font-family: $global-font-family;
   font-size: $type-size-small;
   border-collapse: collapse;
   border: 1px solid var(--global-border-color);
@@ -35,4 +34,13 @@ td {
 
 tr, td, th {
   vertical-align: middle;
+}
+
+/* Compact table for about page */
+.compact-table {
+  font-size: $type-size-small * 0.9;
+
+  td, th {
+    padding: 0.05em 0.08em;
+  }
 }

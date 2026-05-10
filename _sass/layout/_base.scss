@@ -15,7 +15,6 @@ body {
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
-  font-family: $global-font-family;
   line-height: 1.5;
 
   &.overflow--hidden {
@@ -27,7 +26,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: $header-font-family;
   font-weight: bold;
 }
 
@@ -128,7 +126,6 @@ a {
 /* code */
 
 tt, code, kbd, samp, pre {
-  font-family: $monospace;
 }
 
 pre {
@@ -249,7 +246,6 @@ figure {
 figcaption {
   margin-bottom: 0.5em;
   color: var(--global-fig-caption-color);
-  font-family: $caption-font-family;
   font-size: $type-size-small;
 
   a {

@@ -1,12 +1,13 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Course Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
+{% assign sorted_teaching = site.teaching | sort: "weight" %}
+{% for post in sorted_teaching %}
   {% include archive-single.html %}
 {% endfor %}
