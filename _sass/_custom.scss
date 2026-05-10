@@ -230,11 +230,11 @@ a:focus,
 
   .greedy-nav .visible-links a {
     margin: 0 0.3rem;
-    font-size: 0.95rem !important;
+    font-size: 1.1rem !important;
   }
 
   .masthead__menu-item--lg a {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
 
   /* 作者区域：左列（头像+作者信息），右列（链接纵向） */
@@ -286,6 +286,20 @@ a:focus,
 
   .sidebar .author__urls li {
     white-space: normal;
+    font-size: 0.8rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .sidebar .author__urls a {
+    font-size: 0.8rem !important;
+  }
+
+  .sidebar .author__urls i {
+    font-size: 0.75rem !important;
+  }
+
+  .sidebar .author__urls .icon-pad-right {
+    margin-right: 0.2em !important;
   }
 
   /* Research/Project 卡片：上图下文 */
