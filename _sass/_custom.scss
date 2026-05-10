@@ -217,6 +217,7 @@ a:focus,
   .greedy-nav .visible-links {
     flex-wrap: wrap;
     justify-content: flex-start;
+    row-gap: 0.5em;
   }
 
   .greedy-nav .visible-links .masthead__menu-item--lg {
