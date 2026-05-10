@@ -207,3 +207,77 @@ a:focus,
 .archive__item-title {
   font-size: 1rem !important;
 }
+
+/* =======================
+   11. Mobile responsive styles
+   ======================= */
+@media (max-width: 1024px) {
+
+  /* 导航栏：换行+居中+缩小学号 */
+  .greedy-nav .visible-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .greedy-nav .visible-links a {
+    margin: 0 0.35rem;
+    font-size: 0.95rem !important;
+  }
+
+  .masthead__menu-item--lg a {
+    font-size: 0.95rem !important;
+  }
+
+  /* 作者区域：纵向排列，头像居中 */
+  .author__avatar {
+    display: block;
+    width: auto;
+    text-align: center;
+  }
+
+  .author__avatar img {
+    max-width: 100px;
+  }
+
+  .author__content {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+  }
+
+  .author__urls {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3em 0.8em;
+  }
+
+  .author__urls li {
+    white-space: normal;
+  }
+
+  /* Research/Project 卡片：上图下文 */
+  .research-direction,
+  .project-card {
+    flex-direction: column;
+  }
+
+  .research-direction .research-img,
+  .project-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  /* Publications：长条目允许换行 */
+  .page__content p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
