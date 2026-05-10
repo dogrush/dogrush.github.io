@@ -237,8 +237,18 @@ a:focus,
     font-size: 1rem !important;
   }
 
-  /* 作者区域：纵向排列，头像居中 */
+  /* 作者区域：左列（头像+作者信息），右列（链接纵向） */
+  /* 使用 grid 实现：avatar 占左上，content 占左下，urls 占右侧整列 */
+  div[itemscope] {
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0 1em;
+  }
+
   .author__avatar {
+    grid-column: 1;
+    grid-row: 1;
     display: block !important;
     width: auto !important;
     text-align: center;
@@ -249,20 +259,27 @@ a:focus,
   }
 
   .author__content {
+    grid-column: 1;
+    grid-row: 2;
     display: block !important;
-    text-align: center;
+    text-align: left;
     padding: 0 !important;
   }
 
+  .author__content .author__name,
+  .author__content .author__bio {
+    text-align: left !important;
+  }
+
   .author__urls-wrapper {
+    grid-column: 2;
+    grid-row: 1 / 3;
     display: block !important;
+    align-self: start;
   }
 
   .author__urls {
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.3em 0.8em;
+    display: block !important;
   }
 
   .author__urls li {
