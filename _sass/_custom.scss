@@ -144,7 +144,8 @@ a:focus,
 }
 
 .project-card img {
-  width: 200px;
+  display: block;
+  width: 250px;
   height: auto;
   margin-right: 1.5em;
   flex-shrink: 0;
@@ -314,8 +315,6 @@ a:focus,
   .project-card img {
     width: 100% !important;
     max-width: 300px;
-    max-height: 200px;
-    object-fit: contain;
     margin-right: 0 !important;
     margin-bottom: 1em;
   }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3c1a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="url(#bg5)"/>
+  <!-- decorative lock/shield -->
+  <rect x="190" y="45" width="120" height="80" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <path d="M225,45 L225,25 Q250,5 275,25 L275,45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="250" cy="80" r="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <line x1="250" y1="88" x2="250" y2="100" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <!-- binary patterns -->
+  <text x="50" y="200" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01101001</text>
+  <text x="50" y="218" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11010010</text>
+  <text x="50" y="236" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">00110110</text>
+  <text x="340" y="200" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">10011010</text>
+  <text x="340" y="218" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01100101</text>
+  <text x="340" y="236" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11001010</text>
+  <!-- keyword badge -->
+  <rect x="140" y="115" width="220" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
+  <text x="250" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">Cryptographic</text>
+  <text x="250" y="166" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">DSAs</text>
+</svg>
