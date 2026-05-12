@@ -6,20 +6,56 @@
     </linearGradient>
   </defs>
   <rect width="500" height="300" fill="url(#bg5)"/>
-  <!-- decorative lock/shield -->
-  <rect x="190" y="45" width="120" height="80" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <path d="M225,45 L225,25 Q250,5 275,25 L275,45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="250" cy="80" r="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-  <line x1="250" y1="88" x2="250" y2="100" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
-  <!-- binary patterns -->
-  <text x="50" y="200" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01101001</text>
-  <text x="50" y="218" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11010010</text>
-  <text x="50" y="236" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">00110110</text>
-  <text x="340" y="200" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">10011010</text>
-  <text x="340" y="218" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01100101</text>
-  <text x="340" y="236" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11001010</text>
-  <!-- keyword badge -->
-  <rect x="140" y="115" width="220" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
-  <text x="250" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">Cryptographic</text>
-  <text x="250" y="166" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">DSAs</text>
+  
+  <!-- Icon: Crypto Chip with secure elements -->
+  <g transform="translate(365, 55)">
+    <rect x="0" y="0" width="100" height="150" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- Chip substrate -->
+    <rect x="15" y="15" width="70" height="100" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    
+    <!-- Secure Core (center) -->
+    <circle cx="50" cy="50" r="22" fill="rgba(220,38,38,0.2)" stroke="rgba(220,38,38,0.5)" stroke-width="1.5"/>
+    <path d="M50,35 L50,50 L62,50" fill="none" stroke="rgba(220,38,38,0.6)" stroke-width="2" stroke-linecap="round"/>
+    <rect x="44" y="55" width="12" height="10" rx="2" fill="rgba(220,38,38,0.4)"/>
+    <line x1="47" y1="58" x2="53" y2="58" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+    <line x1="47" y1="61" x2="53" y2="61" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+    
+    <!-- Key icon overlay -->
+    <path d="M50,42 L50,38" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <circle cx="50" cy="35" r="3" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+    
+    <!-- Encryption modules (top) -->
+    <rect x="20" y="80" width="25" height="15" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <text x="32" y="90" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.6)">PQC</text>
+    
+    <rect x="55" y="80" width="25" height="15" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <text x="67" y="90" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.6)">FHE</text>
+    
+    <!-- ZK module (bottom) -->
+    <rect x="35" y="100" width="30" height="15" rx="2" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <text x="50" y="110" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.6)">ZKP</text>
+    
+    <!-- Security lines/border -->
+    <rect x="18" y="18" width="64" height="94" rx="3" fill="none" stroke="rgba(220,38,38,0.25)" stroke-width="0.5" stroke-dasharray="4,3"/>
+  </g>
+  
+  <!-- Decorative lock/shield outline -->
+  <rect x="180" y="35" width="100" height="70" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <path d="M210,35 L210,15 Q230,0 250,15 L250,35" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="230" cy="65" r="8" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <line x1="230" y1="73" x2="230" y2="85" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  
+  <!-- Binary patterns -->
+  <text x="40" y="190" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01101001</text>
+  <text x="40" y="208" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11010010</text>
+  <text x="40" y="226" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">00110110</text>
+  <text x="330" y="190" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">10011010</text>
+  <text x="330" y="208" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">01100101</text>
+  <text x="330" y="226" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.07)">11001010</text>
+  
+  <!-- Keyword badge - larger text -->
+  <rect x="85" y="105" width="250" height="75" rx="8" fill="rgba(255,255,255,0.13)"/>
+  <text x="210" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">Cryptographic</text>
+  <text x="210" y="172" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">DSAs</text>
 </svg>

@@ -6,18 +6,58 @@
     </linearGradient>
   </defs>
   <rect width="500" height="300" fill="url(#bg3)"/>
-  <!-- decorative robot arm lines -->
-  <polyline points="60,250 60,150 130,100 200,130" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="60" cy="150" r="4" fill="rgba(255,255,255,0.12)"/>
-  <circle cx="130" cy="100" r="4" fill="rgba(255,255,255,0.12)"/>
-  <circle cx="200" cy="130" r="4" fill="rgba(255,255,255,0.12)"/>
-  <polyline points="300,250 320,180 380,140 430,160" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="320" cy="180" r="4" fill="rgba(255,255,255,0.12)"/>
-  <circle cx="380" cy="140" r="4" fill="rgba(255,255,255,0.12)"/>
-  <circle cx="430" cy="160" r="4" fill="rgba(255,255,255,0.12)"/>
-  <line x1="200" y1="130" x2="250" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <line x1="380" y1="140" x2="250" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <!-- keyword badge -->
-  <rect x="155" y="115" width="190" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
-  <text x="250" y="152" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.92)">Embodied AI</text>
+  
+  <!-- Icon: Robot with sensors -->
+  <g transform="translate(365, 60)">
+    <rect x="0" y="0" width="100" height="140" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- Robot Head -->
+    <rect x="25" y="15" width="50" height="45" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Eyes (camera sensors) -->
+    <circle cx="38" cy="35" r="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <circle cx="62" cy="35" r="10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <circle cx="38" cy="35" r="6" fill="#c084fc"/>
+    <circle cx="62" cy="35" r="6" fill="#c084fc"/>
+    <!-- Eye glint -->
+    <circle cx="36" cy="33" r="2" fill="rgba(255,255,255,0.6)"/>
+    <circle cx="60" cy="33" r="2" fill="rgba(255,255,255,0.6)"/>
+    <!-- Mouth/Speaker -->
+    <rect x="38" y="50" width="24" height="6" rx="2" fill="rgba(255,255,255,0.2)"/>
+    
+    <!-- Antenna -->
+    <line x1="50" y1="15" x2="50" y2="2" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <circle cx="50" cy="2" r="4" fill="#c084fc" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Body -->
+    <rect x="30" y="68" width="40" height="35" rx="5" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <!-- Heart/Core -->
+    <path d="M50,78 L56,72 L62,78 L62,88 L50,95 L38,88 L38,78 L44,72 Z" fill="rgba(255,255,255,0.25)"/>
+    
+    <!-- Arms -->
+    <rect x="10" y="75" width="18" height="8" rx="3" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <rect x="72" y="75" width="18" height="8" rx="3" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    
+    <!-- Wheels/Legs -->
+    <circle cx="35" cy="115" r="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <circle cx="65" cy="115" r="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <circle cx="35" cy="115" r="4" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="65" cy="115" r="4" fill="rgba(255,255,255,0.3)"/>
+  </g>
+  
+  <!-- Decorative robot arm lines -->
+  <polyline points="50,260 50,160 120,100 190,130" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="50" cy="160" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="120" cy="100" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="190" cy="130" r="4" fill="rgba(255,255,255,0.12)"/>
+  <polyline points="280,260 300,180 360,140 420,160" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="300" cy="180" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="360" cy="140" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="420" cy="160" r="4" fill="rgba(255,255,255,0.12)"/>
+  <line x1="190" y1="130" x2="240" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <line x1="360" y1="140" x2="240" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  
+  <!-- Keyword badge - larger text -->
+  <rect x="90" y="105" width="230" height="75" rx="8" fill="rgba(255,255,255,0.13)"/>
+  <text x="205" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="600" fill="rgba(255,255,255,0.95)">Embodied AI</text>
+  <text x="205" y="172" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.8)">VLA &amp; World Models</text>
 </svg>

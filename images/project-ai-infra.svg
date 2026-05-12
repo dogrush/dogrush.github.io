@@ -6,21 +6,53 @@
     </linearGradient>
   </defs>
   <rect width="500" height="300" fill="url(#bg2)"/>
-  <!-- decorative network nodes -->
-  <circle cx="100" cy="60" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="200" cy="100" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="350" cy="50" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="420" cy="110" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <line x1="106" y1="60" x2="194" y2="100" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <line x1="206" y1="100" x2="344" y2="50" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <line x1="356" y1="50" x2="414" y2="110" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <circle cx="80" cy="230" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="180" cy="250" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <circle cx="400" cy="240" r="6" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-  <line x1="86" y1="230" x2="174" y2="250" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <line x1="186" y1="250" x2="394" y2="240" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
-  <!-- keyword badge -->
-  <rect x="100" y="115" width="300" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
-  <text x="250" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">AI / Agentic</text>
-  <text x="250" y="166" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">Infrastructure</text>
+  
+  <!-- Icon: Agent System (Brain + Tools + Loop) -->
+  <g transform="translate(365, 55)">
+    <rect x="0" y="0" width="105" height="150" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- Central Brain/Agent -->
+    <circle cx="52" cy="50" r="25" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+    <path d="M42,45 Q52,35 62,45 Q65,55 52,60 Q39,55 42,45" fill="rgba(255,255,255,0.3)"/>
+    <circle cx="45" cy="48" r="3" fill="rgba(255,255,255,0.8)"/>
+    <circle cx="59" cy="48" r="3" fill="rgba(255,255,255,0.8)"/>
+    <path d="M45,56 Q52,62 59,56" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Tool boxes (left and right) -->
+    <rect x="10" y="85" width="28" height="22" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <text x="24" y="98" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.6)">Tool</text>
+    <text x="24" y="105" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.5)">1</text>
+    
+    <rect x="67" y="85" width="28" height="22" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    <text x="81" y="98" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.6)">Tool</text>
+    <text x="81" y="105" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.5)">2</text>
+    
+    <!-- Action arrows -->
+    <line x1="24" y1="75" x2="24" y2="85" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <line x1="80" y1="75" x2="80" y2="85" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    
+    <!-- Loop arrow at bottom -->
+    <path d="M30,120 Q30,140 52,140 Q74,140 74,120" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M74,125 L70,120 L78,120" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="52" y="148" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Feedback Loop</text>
+  </g>
+  
+  <!-- Decorative network nodes -->
+  <circle cx="80" cy="50" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="180" cy="90" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="320" cy="40" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="400" cy="100" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <line x1="86" y1="50" x2="174" y2="90" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <line x1="186" y1="90" x2="314" y2="40" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <line x1="326" y1="40" x2="394" y2="100" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <circle cx="60" cy="220" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="160" cy="240" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="380" cy="230" r="6" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <line x1="66" y1="220" x2="154" y2="240" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <line x1="166" y1="240" x2="374" y2="230" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  
+  <!-- Keyword badge - larger text -->
+  <rect x="55" y="105" width="240" height="75" rx="8" fill="rgba(255,255,255,0.13)"/>
+  <text x="175" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">AI / Agentic</text>
+  <text x="175" y="170" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">Infrastructure</text>
 </svg>

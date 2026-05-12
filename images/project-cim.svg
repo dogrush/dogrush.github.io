@@ -6,23 +6,70 @@
     </linearGradient>
   </defs>
   <rect width="500" height="300" fill="url(#bg4)"/>
-  <!-- decorative memory grid -->
-  <rect x="50" y="50" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="120" y="50" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="190" y="50" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="260" y="50" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="330" y="50" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="50" y="210" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="120" y="210" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="190" y="210" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="260" y="210" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <rect x="330" y="210" width="60" height="40" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <!-- Icon: Heterogeneous Chip (Memory + Compute) -->
+  <g transform="translate(360, 55)">
+    <rect x="0" y="0" width="110" height="150" rx="10" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+    
+    <!-- Main chip substrate -->
+    <rect x="15" y="15" width="80" height="120" rx="5" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+    
+    <!-- Memory Region (left) -->
+    <rect x="22" y="25" width="32" height="50" rx="3" fill="rgba(74,222,128,0.15)" stroke="rgba(74,222,128,0.5)" stroke-width="1"/>
+    <text x="38" y="45" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.7)">SRAM</text>
+    <!-- Memory cells -->
+    <rect x="26" y="52" width="8" height="6" rx="1" fill="rgba(74,222,128,0.3)"/>
+    <rect x="36" y="52" width="8" height="6" rx="1" fill="rgba(74,222,128,0.3)"/>
+    <rect x="46" y="52" width="8" height="6" rx="1" fill="rgba(74,222,128,0.3)"/>
+    <rect x="26" y="60" width="8" height="6" rx="1" fill="rgba(74,222,128,0.2)"/>
+    <rect x="36" y="60" width="8" height="6" rx="1" fill="rgba(74,222,128,0.4)"/>
+    <rect x="46" y="60" width="8" height="6" rx="1" fill="rgba(74,222,128,0.3)"/>
+    
+    <!-- Compute Region (right) -->
+    <rect x="58" y="25" width="32" height="50" rx="3" fill="rgba(251,191,36,0.15)" stroke="rgba(251,191,36,0.5)" stroke-width="1"/>
+    <text x="74" y="45" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.7)">ALU</text>
+    <!-- Compute elements -->
+    <circle cx="68" cy="55" r="6" fill="none" stroke="rgba(251,191,36,0.5)" stroke-width="1"/>
+    <path d="M65,55 L68,52 L71,55 L68,58 Z" fill="rgba(251,191,36,0.6)"/>
+    <circle cx="80" cy="55" r="6" fill="none" stroke="rgba(251,191,36,0.5)" stroke-width="1"/>
+    <path d="M77,55 L80,52 L83,55 L80,58 Z" fill="rgba(251,191,36,0.6)"/>
+    <circle cx="74" cy="67" r="5" fill="none" stroke="rgba(251,191,36,0.4)" stroke-width="1"/>
+    
+    <!-- In-memory compute connections (vertical bus) -->
+    <line x1="54" y1="30" x2="54" y2="70" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <circle cx="54" cy="40" r="2" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="54" cy="50" r="2" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="54" cy="60" r="2" fill="rgba(255,255,255,0.5)"/>
+    
+    <!-- I/O Pins (bottom) -->
+    <rect x="20" y="85" width="70" height="30" rx="2" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="55" y="103" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">I/O Interconnect</text>
+    <!-- Pin dots -->
+    <circle cx="30" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="42" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="54" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="66" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="78" cy="110" r="2" fill="rgba(255,255,255,0.4)"/>
+  </g>
+  
+  <!-- Decorative memory grid -->
+  <rect x="40" y="40" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="100" y="40" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="160" y="40" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="220" y="40" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="280" y="40" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="40" y="200" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="100" y="200" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="160" y="200" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="220" y="200" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="280" y="200" width="50" height="35" rx="3" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
   <!-- arrows crossing the grid -->
-  <line x1="80" y1="90" x2="80" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="220" y1="90" x2="220" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
-  <line x1="360" y1="90" x2="360" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
-  <!-- keyword badge -->
-  <rect x="115" y="115" width="270" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
-  <text x="250" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">Compute-in-Memory</text>
-  <text x="250" y="166" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.92)">(CIM)</text>
+  <line x1="65" y1="75" x2="65" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="185" y1="75" x2="185" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="305" y1="75" x2="305" y2="200" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
+  
+  <!-- Keyword badge - larger text -->
+  <rect x="70" y="105" width="260" height="75" rx="8" fill="rgba(255,255,255,0.13)"/>
+  <text x="200" y="140" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">Compute-in-Memory</text>
+  <text x="200" y="172" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,0.95)">(CIM)</text>
 </svg>
